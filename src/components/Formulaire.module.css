@@ -1,0 +1,13 @@
+.form {
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 85%;
+}
+
+.form h1 {
+    font-size: 2.2 rem;
+    color: var(--color-red);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
