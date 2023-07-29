@@ -1,0 +1,48 @@
+.center {
+    margin: auto;
+    margin-top: 5rem;
+    width: 85%;
+}
+
+table {
+    border: 1px solid red;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    border: 1px solid red;
+}
+
+.nom {
+    width: 10%;
+}
+
+.prenom {
+    width: 10%;
+}
+
+.email {
+    width: 10%;
+}
+
+.tel {
+    width: 10%;
+}
+
+.objet {
+    width: 10%;
+}
+
+.content {
+    width: 30%;
+}
+
+.stauts {
+    width: 10%;
+}
+
+.modification {
+    width: 10%;
+}

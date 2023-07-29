@@ -1,0 +1,18 @@
+img {
+    width: 30rem;
+}
+
+.description {
+    margin-left: 3rem;
+}
+
+.login {
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+}
+
+.nouvelle {
+    margin-top: 3rem;
+}

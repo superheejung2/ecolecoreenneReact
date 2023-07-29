@@ -1,0 +1,94 @@
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* .bgPositon {
+    background-color: var(--color-blue);
+    background-image: "url(img/chackado.jpg)";
+    width: 100%;
+    height: 40rem;
+} */
+.bg_rectangle {
+    background-image: url("../../../public/img/arriere-plan-colore-flou-vif.jpg");
+    background-size: cover;
+    /* background-position: 25% 60%; */
+
+}
+
+.bg {
+    width: 85%;
+    margin: auto;
+    /* background-color: #B1D5F8; */
+    /* background-color: ; */
+
+    /* background-image: url("../../../public/img/chackado_2.png"); */
+    /* background-position: 50% 50%; */
+
+    /* width: 100%; */
+    /* height: 35rem; */
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 3rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+    /* justify-content: space-around */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+/* .bg_textbox {
+    margin-left: 10.4rem;
+    margin-top: 5rem;
+} */
+
+.titre {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3rem;
+    /* color: #000; */
+    /* color: #fff; */
+    color: black;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Advent Pro', sans-serif;
+    color: rgb(0, 0, 0, 0.7)
+}
+
+.textboxHome {
+    width: 52rem;
+}
+
+
+.chackado {
+    height: 25rem;
+    width: 55rem;
+}
+
+.books {
+    max-height: 33rem;
+    /* margin-right: 2.8rem; */
+}
+
+.ecole {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    vertical-align: middle;
+
+    /* opacity: ; */
+    /* border: 0.3rem white solid; */
+    /* padding: 5rem 10rem; */
+}
+
+.buttonBlue {
+    margin-top: 1rem;
+    background-color: var(--color-blue);
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+}

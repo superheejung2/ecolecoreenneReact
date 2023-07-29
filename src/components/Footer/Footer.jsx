@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
             <nav className={styles.nav}>
                 <div>Plan du site</div>
                 <div className={styles.navList}>
@@ -37,6 +37,6 @@ export default function Footer() {
 
                 <Link to="/contact">CONTACT</Link>
             </nav>
-        </div >
+        </footer>
     )
 }

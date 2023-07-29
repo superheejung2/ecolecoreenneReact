@@ -1,0 +1,11 @@
+import React from 'react'
+import styles from './AdminImg.module.css'
+
+export default function AdminImg() {
+    return (
+        <div className={styles.center}>
+            <h1>Admin </h1>
+            <img src="img/Coree_palas_petit.jpg" alt="Palas de Corée" />
+        </div>
+    )
+}

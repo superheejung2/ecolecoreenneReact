@@ -5,6 +5,8 @@ import styles from './Navbar.module.css'
 // import { login, logout, onUserStateChange } from "../api/firebase";
 
 export default function Navbar() {
+
+    //<-- code for the login for student, if necessary in the future-->
     // const [user, setUser] = useState();
 
     // useEffect(() => {

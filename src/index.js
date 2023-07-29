@@ -8,9 +8,12 @@ import Ecole from './pages/Ecole';
 import Cours from './pages/Cours';
 import InfosUtiles from './pages/InfosUtiles';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
+import CoursDetail from './pages/CoursDetail';
+import CreateNewsletter from './components/Newsletter/CreateNewsletter';
 
 const router = createBrowserRouter([
   {
@@ -23,9 +26,17 @@ const router = createBrowserRouter([
         path: '/ecole',
         element: <Ecole />,
       },
+      // {
+      //   path: '/add_newsletter',
+      //   element: <CreateNewsletter />,
+      // },
       {
         path: '/cours',
         element: <Cours />,
+      },
+      {
+        path: '/cours/:coursId',
+        element: <CoursDetail />,
       },
       {
         path: '/info',
@@ -36,9 +47,13 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: '/login',
+        element: <Login />,
+      },
+      {
         path: '/admin',
         element: <Admin />,
-      }, 
+      },
     ]
   }
 ])

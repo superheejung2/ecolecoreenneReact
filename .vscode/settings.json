@@ -1,0 +1,8 @@
+{
+    "workbench.editor.decorations.colors": false,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#d000e3",
+        "titleBar.inactiveBackground":"#d000e3"
+    
+    }
+}

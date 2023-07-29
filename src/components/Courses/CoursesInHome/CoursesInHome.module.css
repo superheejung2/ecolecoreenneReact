@@ -1,0 +1,27 @@
+.title,
+.cours {
+    max-width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.title {
+    font-weight: 700;
+    display: flex;
+}
+
+.bg {
+    height: 12rem;
+    background: rgb(255, 247, 173);
+    background: linear-gradient(90deg, rgba(255, 247, 173, 1) 17%, rgba(255, 169, 249, 1) 100%);
+}
+
+.slogan {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.cours {
+    display: flex;
+
+}
