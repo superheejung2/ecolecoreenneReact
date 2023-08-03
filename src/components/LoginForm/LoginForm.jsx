@@ -24,7 +24,7 @@ export default function LoginForm() {
 
     const onSubmitHandler = async (e) => {
         e.preventDefault();
-        console.log(logins)
+        // console.log(logins)
 
         try {
             // await axios.post(SERVER_URL, logins);

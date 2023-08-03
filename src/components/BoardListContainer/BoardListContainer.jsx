@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import BoardList from '../BoardList/BoardList'
-import axios from '../../api/axiosInstance';
 // import styles from './BoardListContainer.module.css'
+import axios from 'axios'
+
 
 const SERVER_URL = '/admin';
 
@@ -15,9 +16,9 @@ export default function BoardListContainer() {
         setLoading(true);
         try {
             const response = await fetchBoardList();
-            console.log(response)
+            // console.log(response)
             setBoards(response.data);
-            console.log(response.data)
+            // console.log(response.data)
             setLoading(false);
         } catch (e) {
             setLoading(false);
@@ -28,13 +29,24 @@ export default function BoardListContainer() {
         listBoard();
     }, [])
 
+    // const [boards, setBoards] = useState([]);
+    // const [isLoading, setLoading] = useState(false);
+
+
+
+
+
+
+
+
+
     return (
         // <BoardList boards={boards} isLoading={isLoading} />
         <div >
             <h2>게시판 목록</h2>
             {isLoading && "로딩중"}
             {!!isLoading && boards && (
-
+                //  {!!isLoading && boards && (
 
                 <table>
                     <caption>Formulaire</caption>
@@ -51,29 +63,8 @@ export default function BoardListContainer() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                            <td>
-
-
-                            </td>
-                        </tr>
-
-                        {/* {!boards.length < 0 && boards.map((board) => (
-                            <tr key={board.id}>
+                        {!boards.length < 0 && boards.map((board, i) => (
+                            <tr key={i}>
                                 <td>{board.lastname}</td>
                                 <td>{board.firstname}</td>
                                 <td>{board.email}   </td>
@@ -81,9 +72,12 @@ export default function BoardListContainer() {
                                 <td>{board.choix} </td>
                                 <td>{board.content} </td>
                                 <td>{board.date} </td>
-                                <td> icone </td>
+                                <td>
+                                    <button>Update</button>
+                                    <button>Delete</button>
+                                </td>
                             </tr>
-                        ))} */}
+                        ))}
                     </tbody>
                 </table>
 

@@ -4,6 +4,8 @@ import axios from 'axios'
 import Button from '../ui/Button';
 
 
+
+//유튜브 보고 참고해서 만듬
 export default function ListNewsletter() {
 
     const [newsletter, setNewsletter] = useState([])

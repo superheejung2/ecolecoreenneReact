@@ -11,3 +11,13 @@
     font-weight: 700;
     margin-bottom: 2rem;
 }
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}

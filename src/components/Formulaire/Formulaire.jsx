@@ -14,19 +14,6 @@ export default function Formulaire() {
         content: ''
     });
 
-    // const fetchData = async () => {
-    //     try {
-    //         const response = await axios.get(SERVER_URL)
-    //         setForms(response.data);
-    //     } catch (error) {
-    //         console.error(error);
-    //     }
-    // };
-
-    // useEffect(() => {
-    //     fetchData()
-    // }, []);
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForms((prevForms) => ({
@@ -36,8 +23,7 @@ export default function Formulaire() {
 
     const onSubmitHandler = async (e) => {
         e.preventDefault();
-        // const firstname = e.target.firstname.value;
-        // const lastname = e.target.lastname.value;
+
 
         try {
             await axios.post(SERVER_URL, forms);
@@ -73,75 +59,77 @@ export default function Formulaire() {
             <h1>Formulaire</h1>
             <form onSubmit={onSubmitHandler}>
                 {/* <input type="file" accept="imge/*" name='file' /> */}
+                <div className={styles.horizontal}>
+                    <div className={styles.vertical}>
+                        <label htmlFor='firstname'> Nom* </label>
+                        <input
+                            type="text"
+                            name='firstname'
+                            id='firstname'
+                            value={forms.firstname ?? ''}
+                            required
+                            onChange={handleChange}
+                        />
+                    </div>
 
-                <label htmlFor='firstname'> Nom*   </label>
-                <input
-                    type="text"
-                    name='firstname'
-                    id='firstname'
-                    value={forms.firstname ?? ''}
-                    placeholder='Votre nom'
-                    required
-                    onChange={handleChange}
-                />
+                    <div className={styles.vertical}>
 
+                        <label htmlFor='lastname'> Prénom   </label>
+                        <input
+                            type="text"
+                            name="lastname"
+                            id='lastname'
+                            value={forms.lastname ?? ''}
+                            onChange={handleChange}
+                        />
+                    </div>
+                </div>
 
-                <label htmlFor='lastname'> Prénom     </label>
-                <input
-                    type="text"
-                    name="lastname"
-                    id='lastname'
-                    value={forms.lastname ?? ''}
-                    placeholder="Votre prénom"
-                    required
-                    onChange={handleChange}
-                />
+                <div className={styles.horizontal}>
+                    <div className={styles.vertical}>
+                        <label htmlFor='email'> Email*  </label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            value={forms.email ?? ''}
+                            required
+                            onChange={handleChange}
+                        />
+                    </div>
 
-
-                <div>
-                    <label htmlFor='email'> Email*  </label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        value={forms.email ?? ''}
-                        placeholder="Votre email"
-                        required
-                        onChange={handleChange}
-                    />
-
-
-                    <label htmlFor='tel'>Tel   </label>
-                    <input
-                        type="tel"
-                        name="tel"
-                        id="tel"
-                        value={forms.tel ?? ''}
-                        placeholder="Votre téléphone"
-                        onChange={handleChange}
-                    />
-
+                    <div className={styles.vertical}>
+                        <label htmlFor='tel'>Tél   </label>
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            value={forms.tel ?? ''}
+                            onChange={handleChange}
+                        />
+                    </div>
                 </div>
 
                 <div>
-                    <label htmlFor='choix'> choix  </label>
+                    <label htmlFor='choix'> Objet de la demande  </label>
                     <input
                         type="text"
                         name="choix"
                         id="choix"
                         value={forms.choix ?? ''}
-                        placeholder="Votre choix"
+                        required
                         onChange={handleChange}
                     />
+                </div>
 
-
-                    <label htmlFor='content'>content   </label>
+                <div>
+                    <label htmlFor='content'>Votre message  </label>
                     <input
                         type="text"
                         name="content"
                         id="content"
                         value={forms.content ?? ''}
-                        placeholder="Votre content"
+                        required
                         onChange={handleChange}
                     />
 

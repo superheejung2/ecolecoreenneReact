@@ -18,7 +18,7 @@ window.env = {
   "USER": "superheejung",
   "COMMAND_MODE": "unix2003",
   "npm_config_globalconfig": "/opt/homebrew/etc/npmrc",
-  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.TlNgFush5g/Listeners",
+  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.j43jrfRTtV/Listeners",
   "__CF_USER_TEXT_ENCODING": "0x1F5:0x3:0x33",
   "npm_execpath": "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
   "PATH": "/Users/superheejung/Desktop/react-node/siteecole/client/node_modules/.bin:/Users/superheejung/Desktop/react-node/siteecole/node_modules/.bin:/Users/superheejung/Desktop/react-node/node_modules/.bin:/Users/superheejung/Desktop/node_modules/.bin:/Users/superheejung/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin",
@@ -51,7 +51,7 @@ window.env = {
   "npm_config_user_agent": "npm/9.8.1 node/v16.20.1 darwin arm64 workspaces/false",
   "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
   "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
-  "DISPLAY": "/private/tmp/com.apple.launchd.YvMw5vaPhl/org.macosforge.xquartz:0",
+  "DISPLAY": "/private/tmp/com.apple.launchd.cNMglEPEkI/org.macosforge.xquartz:0",
   "npm_node_execpath": "/opt/homebrew/Cellar/node@16/16.20.1_1/bin/node",
   "npm_config_prefix": "/opt/homebrew",
   "COLORTERM": "truecolor"

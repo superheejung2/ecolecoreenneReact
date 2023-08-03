@@ -1,22 +1,18 @@
 import React from 'react';
-import styles from './HomeImg.module.css'
+import styles from './HomeImg.module.css';
+import Carousel from "nuka-carousel"
 
 
 export default function HomeImg() {
     return (
-        <div className={styles.bg_rectangle}>
-            <div className={styles.bg}>
-                <div className={styles.bg_textbox}>
-                    <h1 className={styles.titre}> Ecole coréenne de Nantes </h1>
-                    <p className={styles.textboxHome}>
-                        Vous êtes passionné(e) par la langue coréenne et la culture coréenne ? Rejoignez notre école pour une expérience unique d'apprentissage et d'échange.
-                    </p>
-                    <button className={styles.buttonBlue}>Nous joindre</button>
-                </div>
-                <div>
-                    <img src='/img/chackado.jpg' alt='peinture livres' className={styles.chackado}></img>
-                </div>
-            </div>
-        </div>
+        <article className={styles.bg_rectangle}>
+            {/* <div className={styles.bg}> */}
+            <Carousel autoplay autoplayInterval="4000" disableEdgeSwiping>
+                <img src='/img/homeImg2.png' alt='peinture livres' className={styles.img}></img>
+                <img src='/img/homeImgrabbit.png' alt='apprenons le coréen' className={styles.img}></img>
+                <img src='/img/homeImgpie2.png' alt='apprenons le coréen' className={styles.img}></img>
+            </Carousel>
+            {/* </div> */}
+        </article >
     )
 }

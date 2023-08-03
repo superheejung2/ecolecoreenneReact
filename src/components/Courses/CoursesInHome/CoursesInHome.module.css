@@ -1,19 +1,37 @@
-.title,
-.cours {
+.container {
     max-width: 85%;
+    margin: auto;
+}
+
+.title {
     margin: auto;
     margin-top: 3rem;
 }
 
-.title {
-    font-weight: 700;
-    display: flex;
-}
-
 .bg {
+    margin-top: 3rem;
     height: 12rem;
     background: rgb(255, 247, 173);
     background: linear-gradient(90deg, rgba(255, 247, 173, 1) 17%, rgba(255, 169, 249, 1) 100%);
+}
+
+.boxTitle {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* text-align: justify */
+    align-self: center;
+    /* align-items: center; */
+
+    /* Horizontal */
+    /* text-align: center; */
+}
+
+
+
+.title {
+    font-weight: 700;
+    display: flex;
 }
 
 .slogan {
@@ -21,7 +39,18 @@
     margin-bottom: 0.8rem;
 }
 
-.cours {
-    display: flex;
+.subSlogan {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+}
 
+.cours {
+    /* margin: auto; */
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.mr {
+    margin-right: 2rem;
 }

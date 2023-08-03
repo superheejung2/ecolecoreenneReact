@@ -7,15 +7,18 @@ import { BiHappyHeartEyes } from "react-icons/bi";
 
 
 
+
+
 export default function HomeEcole() {
     return (
-
-        <div className={styles.container}>
+        <article className={styles.container}>
             <div>
                 <h1 className={styles.h1}>Notre mission</h1>
                 <p className={styles.p}>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, exercitationem minima ipsa voluptatibus tempora totam sed perspiciatis tempore. Iste ipsa maiores quos beatae distinctio autem voluptatibus laborum eos, asperiores vitae.
                     Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores!
+                    Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores!
+
                 </p>
                 <button>En savoir plus</button>
             </div>
@@ -37,6 +40,6 @@ export default function HomeEcole() {
                     <p className={styles.pwithIcons}>Épanouissement</p>
                 </div>
             </div>
-        </div >
+        </article >
     )
 }
