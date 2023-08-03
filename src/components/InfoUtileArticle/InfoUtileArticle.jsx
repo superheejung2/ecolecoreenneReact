@@ -5,30 +5,30 @@ import ReactHtmlParser from 'react-html-parser';
 import Axios from 'axios';
 
 
-import React from 'react';
-
-
-
+//for editing articles for "infos utiles"
 export default function InfoUtileArticle() {
     const [infoContent, setInfoContent] = useState({
         title: '',
-        content: ''
+        url: '',
+        content: '',
     })
 
     const [viewContent, setViewContent] = useState([]);
 
     useEffect(() => {
-        Axios.get('http://localhost:8000/api/get').then((response) => {
+        Axios.get('http://localhost:8000/infoarticle').then((response) => {
             setViewContent(response.data);
         })
     }, [viewContent])
 
     const submitReview = () => {
-        Axios.post('http://localhost:8000/api/insert', {
+        Axios.post('http://localhost:8000/addinfoarticle', {
             title: infoContent.title,
+            url: infoContent.url,
+            alt: infoContent.alt,
             content: infoContent.content
         }).then(() => {
-            alert('등록 완료!');
+            alert('Enrégistré!');
         })
     };
 
@@ -42,11 +42,12 @@ export default function InfoUtileArticle() {
 
     return (
         <div>
-            <h1>Movie Review</h1>
+            <h1>Info Utiles</h1>
             <div>
                 {viewContent.map(element =>
                     <div>
                         <h2>{element.title}</h2>
+                        <img src="`{element.url}`" alt="`{element.alt}`" />
                         <div>
                             {ReactHtmlParser(element.content)}
                         </div>
@@ -60,6 +61,14 @@ export default function InfoUtileArticle() {
                     onChange={getValue}
                     name='title'
                 />
+                <input
+                    type='text'
+                    placeholder='url'
+                    onChange={getValue}
+                    name='url'
+                />
+
+
                 <CKEditor
                     editor={ClassicEditor}
                     data="<p>Veuillez entrer votre contenu</p>"

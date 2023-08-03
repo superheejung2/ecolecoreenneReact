@@ -13,19 +13,8 @@ export default function BoardListContainer() {
             .catch(err => console.log(err));
     }, [])
 
-    console.log(formContact)
-    // const fetchBoardList = () => ;
-    // const listBoard = async () => {
-    //     setLoading(true);
-    //     try {
-    //         const response = await fetchBoardList();
-    //         setBoards(response.data);
-    //         setLoading(false);
-    //     } catch (e) {
-    //         setLoading(false);
-    //         throw e;
-    //     }
-    // }
+    // console.log(formContact)
+
 
 
     return (
