@@ -1,25 +1,17 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import ReactHtmlParser from 'react-html-parser';
 import Axios from 'axios';
 
 
-//for editing articles for "infos utiles"
-export default function InfoUtileArticle() {
+export default function AddInfoUtileArticle() {
+
     const [infoContent, setInfoContent] = useState({
         title: '',
         url: '',
         content: '',
     })
-
-    const [viewContent, setViewContent] = useState([]);
-
-    useEffect(() => {
-        Axios.get('http://localhost:8000/infoarticle').then((response) => {
-            setViewContent(response.data);
-        })
-    }, [viewContent])
 
     const submitReview = () => {
         Axios.post('http://localhost:8000/addinfoarticle', {
@@ -29,7 +21,12 @@ export default function InfoUtileArticle() {
             content: infoContent.content
         }).then(() => {
             alert('Enrégistré!');
+            redirectToAdmin();
         })
+    };
+
+    const redirectToAdmin = () => {
+        window.location.replace('/admin'); //Redirect to admin page after successful registration
     };
 
     const getValue = e => {
@@ -42,18 +39,8 @@ export default function InfoUtileArticle() {
 
     return (
         <div>
-            <h1>Info Utiles</h1>
-            <div>
-                {viewContent.map(element =>
-                    <div>
-                        <h2>{element.title}</h2>
-                        <img src="`{element.url}`" alt="`{element.alt}`" />
-                        <div>
-                            {ReactHtmlParser(element.content)}
-                        </div>
-                    </div>
-                )}
-            </div>
+            <h1> Ajouter un article</h1>
+
             <div>
                 <input
                     type='text'
@@ -97,6 +84,5 @@ export default function InfoUtileArticle() {
                 onClick={submitReview}
             >submit</button>
         </div>
-    );
+    )
 }
-

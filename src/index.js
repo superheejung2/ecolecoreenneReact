@@ -14,6 +14,8 @@ import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import CoursDetail from './pages/CoursDetail';
 import CreateNewsletter from './components/Newsletter/CreateNewsletter';
+import AddInfoUtileArticle from "./components/AddInfoUtileArticle/AddInfoUtileArticle"
+import InfoUtileArticleUpdate from "./components/InfoUtileArticleUpdate/InfoUtileArticleUpdate"
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,10 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: '/addinfoutilearticle',
+        element: <AddInfoUtileArticle />,
+      },
+      {
         path: '/login',
         element: <Login />,
       },
@@ -54,6 +60,13 @@ const router = createBrowserRouter([
         path: '/admin',
         element: <Admin />,
       },
+
+      {
+        path: '/infoupdate/:id',
+        element: <InfoUtileArticleUpdate />,
+      },
+
+
     ]
   }
 ])

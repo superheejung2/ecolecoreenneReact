@@ -43,8 +43,8 @@ export default function BoardListContainer() {
     return (
         // <BoardList boards={boards} isLoading={isLoading} />
         <div >
-            <h2>게시판 목록</h2>
-            {isLoading && "로딩중"}
+            <h2>List</h2>
+            {isLoading && "loading"}
             {!!isLoading && boards && (
                 //  {!!isLoading && boards && (
 

@@ -1,0 +1,23 @@
+.img {
+    width: 100px;
+}
+
+.pagination {
+    display: flex;
+    /* margin: auto; */
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+
+.paginationLink {
+    /* border: 1px salmon solid; */
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.paginationActive {
+    padding-left: 1rem;
+    padding-right: 2rem;
+    /* margin: 1rem; */
+}

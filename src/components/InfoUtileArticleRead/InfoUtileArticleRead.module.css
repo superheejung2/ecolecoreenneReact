@@ -1,4 +1,13 @@
 .box {
     border: 2px solid sienna;
     margin: 2rem;
+    display: flex;
+}
+
+.style {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+    width: 100px;
 }

@@ -1,42 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsChevronDown } from 'react-icons/bs';
 import styles from './Navbar.module.css'
-// import { login, logout, onUserStateChange } from "../api/firebase";
+import { useDarkMode } from "../../context/DarkModeContext";
+import { FiSun } from "react-icons/fi";
+import { BiSolidMoon } from "react-icons/bi"
 
 export default function Navbar() {
-
-    //<-- code for the login for student, if necessary in the future-->
-    // const [user, setUser] = useState();
-
-    // useEffect(() => {
-    //     onUserStateChange((user) => {
-    //         console.log(user);
-    //         setUser(user);
-    //     });
-    // }, []);
-
-    // const handleLogin = () => {
-    //     login().then(setUser);
-    // }
-
-    // const handleLogout = () => {
-    //     logout().then(setUser);
-    // };
-
+    const { darkMode, toggleDarkMode } = useDarkMode()
 
     return (
         <header>
+
             <div className={styles.topBox}></div>
+            <button onClick={toggleDarkMode}>
+                {!darkMode && <FiSun />}
+                {darkMode && <BiSolidMoon />}
+            </button>
             <div className={styles.container}>
-                <div className={styles.sns}>
+                {/* <div className={styles.sns}>
                     <Link to="/" className={styles.fb}>
                         <BsFacebook />
                     </Link>
                     <Link to="/" className={styles.inst}>
                         <BsInstagram />
                     </Link>
-                </div>
+                </div> */}
                 <div className={styles.navbar}>
                     <div>
                         <Link to='/'>
