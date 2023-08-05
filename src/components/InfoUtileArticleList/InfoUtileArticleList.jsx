@@ -44,7 +44,7 @@ export default function InfoUtileArticleList() {
                 <tr key={element.id}>
                     <td>{trueIndex}</td>
                     <td><img className={styles.img} src={element.url} alt={element.alt} /></td>
-                    <td>{element.title}</td>
+                    <Link to={`/info/${element.id}`}><td>{element.title}</td> </Link>
                     <td>
                         {ReactHtmlParser(truncate(element.content, 100))}
                     </td>

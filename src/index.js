@@ -16,6 +16,7 @@ import CoursDetail from './pages/CoursDetail';
 import CreateNewsletter from './components/Newsletter/CreateNewsletter';
 import AddInfoUtileArticle from "./components/AddInfoUtileArticle/AddInfoUtileArticle"
 import InfoUtileArticleUpdate from "./components/InfoUtileArticleUpdate/InfoUtileArticleUpdate"
+import InfoUtileDetail from "./pages/InfoUtileDetail"
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
         element: <AddInfoUtileArticle />,
       },
       {
+        path: '/info/:id',
+        element: <InfoUtileDetail />,
+      },
+
+      {
         path: '/login',
         element: <Login />,
       },
@@ -61,10 +67,12 @@ const router = createBrowserRouter([
         element: <Admin />,
       },
 
+
       {
         path: '/infoupdate/:id',
         element: <InfoUtileArticleUpdate />,
       },
+
 
 
     ]
