@@ -39,7 +39,7 @@ export default function LoginForm() {
 
     return (
         <article className={styles.login}>
-            <img src="img/changdeokgung-palace_coree.jpg" alt="palas coréen" />
+            <img src="img/changdeokgung-palace_coree.jpg" alt="palas coréen" className={styles.img} />
 
             <div className={styles.description}>
                 <div className={styles.check}>

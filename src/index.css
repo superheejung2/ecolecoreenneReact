@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); */
 
 :root {
-  /* --color-bg-dark: #f5f5f5; */
-  --color-nav: #fdfffd;
-  --color-bg: #fdfffd;
+
+  /* --color-nav: #fdfffd;
+  --color-bg: #fdfffd; */
+  --color-bg: #fff;
   /* --color-grey: #d1d1d1; */
   --color-text: #000;
   --color-accent: #A41819;
+  --color-nav-top: #A41819;
   --color-blue: #003478;
   --color-red: #A41819;
 }
@@ -17,6 +19,8 @@ html.dark {
   --color-bg: #414141;
   /* --color-grey: #d1d1d1; */
   --color-text: #BDBDBD;
+
+  --color-nav-top: #000;
   --color-accent: #A41819;
   --color-blue: #003478;
   --color-red: #A41819;
@@ -129,43 +133,52 @@ section {
   display: block;
 }
 
+
 body {
   line-height: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  /* --color-nav: #fdfffd;
+  --color-bg: #fdfffd;
+  --color-accent: #A41819;
+  --color-blue: #003478;
+  --color-red: #A41819; */
+
+
+
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Advent Pro',
+    sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 ol,
 ul {
   list-style: none;
 }
 
+/* 
 blockquote p::before {
   content: '\201C';
 }
 
 blockquote p::after {
   content: '\201D';
-}
+} */
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-body {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 1.6rem;
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Advent Pro',
-    sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -178,7 +191,7 @@ code {
     monospace;
 }
 
-.container {
+/* .container {
   width: 85%;
   margin: auto;
-}
+} */

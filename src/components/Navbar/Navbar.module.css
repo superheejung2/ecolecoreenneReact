@@ -1,5 +1,11 @@
+.mode {
+    background-color: var(--color-nav);
+
+
+}
+
 .topBox {
-    background-color: var(--color-red);
+    background-color: var(--color-nav-top);
     width: 100%;
     height: 5px;
     margin-bottom: 1rem;
@@ -10,45 +16,29 @@
     margin: auto;
 }
 
-.sns {
-    float: right;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-
-
-}
-
-.fb {
-    margin-right: 1rem;
-    color: black;
-}
-
-.inst {
-    color: black;
-}
-
 .navbar img {
-    width: 140px;
-}
+    width: 15rem;
+    margin-right: 2.5rem;
 
+}
 
 .navbar {
     padding-top: 2rem;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* vertical-align: bottom; */
+
 }
 
-
 nav a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     display: inline;
-    color: black;
+    color: var(--color-text);
     font-weight: bold;
     text-decoration: none;
-    padding: 1rem 2rem 0.3rem 2rem;
+    padding: 1rem 2.5rem 0.3rem 2rem;
     transition: all .1s linear;
 }
 
@@ -59,6 +49,11 @@ nav a:hover {
     transition: transform 200ms ease-in-out;
 }
 
+/* .darkMode {
+    display: flex;
+    justify-content: flex-end;
+} */
+
 h1:hover:after {
     transform: scaleX(1);
 }
@@ -66,9 +61,3 @@ h1:hover:after {
 nav a:focus {
     color: var(--color-red);
 }
-
-.iconstyle {
-    vertical-align: middle;
-}
-
-

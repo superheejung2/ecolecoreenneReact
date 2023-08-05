@@ -2,16 +2,18 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsTelephoneFill } from 'react-icons/bs';
 import { LuMail } from "react-icons/lu";
-import styles from './ContactEcole.module.css'
+// import styles from './ContactEcole.module.css'
 
 
 export default function ContactEcole() {
     return (
-        <div className={styles.contact}>
+        // <div className={styles.contact}>
+        <div>
             <h1>Nos Contact</h1>
-            <div className={styles.box}>
+            <div>
+                {/* <div className={styles.box}> */}
                 <img src="../img/lampions.jpg" alt="lampions" />
-                <div>
+                {/* <div>
                     <p>
                         <BsTelephoneFill className={styles.black} />
                         <span className={styles.espace}>06 24 61 65 18</span>
@@ -35,7 +37,7 @@ export default function ContactEcole() {
                         </Link>
                         <span className={styles.espace}>www.instagram.com/</span>
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     )

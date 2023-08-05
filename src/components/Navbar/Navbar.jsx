@@ -11,42 +11,35 @@ export default function Navbar() {
 
     return (
         <header>
+            <div className={styles.mode}>
+                <div className={styles.topBox}></div>
+                <button onClick={toggleDarkMode} >
+                    {!darkMode && <FiSun />}
+                    {darkMode && <BiSolidMoon />}
+                </button>
+                <div className={styles.container}>
+                    <div className={styles.navbar}>
+                        <div>
+                            <Link to='/' className={styles.logo}>
+                                {!darkMode && <img className="logo" alt="logo" src="../img/logo.png" />}
+                                {darkMode && <img className="logo" alt="logo" src="../img/logo_darkMode.png" />}
+                            </Link>
+                        </div>
+                        <nav>
+                            <Link to="/">ACCEUIL </Link>
 
-            <div className={styles.topBox}></div>
-            <button onClick={toggleDarkMode}>
-                {!darkMode && <FiSun />}
-                {darkMode && <BiSolidMoon />}
-            </button>
-            <div className={styles.container}>
-                {/* <div className={styles.sns}>
-                    <Link to="/" className={styles.fb}>
-                        <BsFacebook />
-                    </Link>
-                    <Link to="/" className={styles.inst}>
-                        <BsInstagram />
-                    </Link>
-                </div> */}
-                <div className={styles.navbar}>
-                    <div>
-                        <Link to='/'>
-                            <img className="logo" alt="logo" src="../img/logo.png" />
-                        </Link>
-                    </div>
-                    <nav>
-                        <Link to="/">ACCEUIL </Link>
+                            <Link to="/ecole">ECOLE<BsChevronDown className={styles.iconstyle} /></Link>
 
-                        <Link to="/ecole">ECOLE<BsChevronDown className={styles.iconstyle} /></Link>
+                            <Link to="/cours">COURS<BsChevronDown className={styles.iconstyle} /></Link>
 
-                        <Link to="/cours">COURS<BsChevronDown className={styles.iconstyle} /></Link>
+                            <Link to="/info">INFOS UTILES<BsChevronDown className={styles.iconstyle} /></Link>
 
-                        <Link to="/info">INFOS UTILES<BsChevronDown className={styles.iconstyle} /></Link>
-
-                        <Link to="/contact">CONTACT<BsChevronDown className={styles.iconstyle} /></Link>
-
-                        {/* {!user && <button onClick={handleLogin}>Login</button>}
+                            <Link to="/contact">CONTACT<BsChevronDown className={styles.iconstyle} /></Link>
+                            {/* {!user && <button onClick={handleLogin}>Login</button>}
                         {user && <button onClick={handleLogout}>Logout</button>} */}
 
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>

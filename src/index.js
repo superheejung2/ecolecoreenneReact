@@ -49,6 +49,7 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />,
       },
+
       {
         path: '/addinfoutilearticle',
         element: <AddInfoUtileArticle />,
@@ -67,14 +68,10 @@ const router = createBrowserRouter([
         element: <Admin />,
       },
 
-
       {
         path: '/infoupdate/:id',
         element: <InfoUtileArticleUpdate />,
       },
-
-
-
     ]
   }
 ])

@@ -1,4 +1,4 @@
-img {
+.img {
     width: 30rem;
 }
 
@@ -7,7 +7,7 @@ img {
 }
 
 .login {
-    width: 85%;
+    /* width: 85%; */
     margin: auto;
     margin-top: 3rem;
     display: flex;
@@ -15,4 +15,10 @@ img {
 
 .nouvelle {
     margin-top: 3rem;
+}
+
+.darkMode {
+    border: none;
+    padding: 0;
+    background: none;
 }

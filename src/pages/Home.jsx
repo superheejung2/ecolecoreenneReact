@@ -5,6 +5,7 @@ import ListNewsletter from '../components/Newsletter/ListNewsletter'
 import CoursesInHome from '../components/Courses/CoursesInHome/CoursesInHome'
 import GaleriePhoto from '../components/GaleriePhoto/GaleriePhoto'
 import AddNewsletter from '../components/Newsletter/AddNewsletter'
+
 export default function Home() {
     return (
         <div>
