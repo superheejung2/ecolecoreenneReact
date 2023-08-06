@@ -22,8 +22,9 @@ export default function GaleriePhoto() {
                         </Carousel>
                     </div>
                     <div className={styles.text}>
-                        <p>Et perspiciatis veniam et eius dolores et omnis fuga id labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
-                        <p>Veniam et eius dolores et omnis fuga id labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
+                        <p className={styles.p1}>Et perspiciatis veniam et eius dolores et omnis fuga id labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
+                        <p className={styles.p2}>Veniam et eius doloxid labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
+                        <p className={styles.p3}>Fugas dolores imi accusaomnis et quam vermi est accusamus omnis et quam veritatis iusto culpa.</p>
 
                     </div>
                 </div>

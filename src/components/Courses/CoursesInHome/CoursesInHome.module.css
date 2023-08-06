@@ -1,72 +1,100 @@
-.container {
-    max-width: 85%;
-    margin: auto;
+/*Mobile first */
+/*defaut */
+@media screen {
+    .container {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .title {
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .bg {
+        margin-top: 3rem;
+        height: 12rem;
+        background: rgb(255, 247, 173);
+        background: linear-gradient(90deg, rgba(255, 247, 173, 1) 17%, rgba(255, 169, 249, 1) 100%);
+    }
+
+    .passion {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+
+    }
+
+    .moment {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #A41819;
+    }
+
+    .box {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .boxTitle {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-self: center;
+    }
+
+    .title {
+        font-weight: 700;
+        display: flex;
+    }
+
+    .cours {
+        margin-top: 3rem;
+    }
+
+    .p2 {
+        display: none;
+    }
+
+    .button {
+        background-color: #A41819;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
 }
 
-.title {
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
+/* Mobile */
+@media (min-width: 576px) {
+    .container {
+        max-width: 85%;
+    }
 
-.bg {
-    margin-top: 3rem;
-    height: 12rem;
-    background: rgb(255, 247, 173);
-    background: linear-gradient(90deg, rgba(255, 247, 173, 1) 17%, rgba(255, 169, 249, 1) 100%);
-}
+    .cours {
+        display: flex;
+        margin-top: 3rem;
+        align-items: start;
+    }
 
-.passion {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    .p2 {
+        display: block;
+    }
 
-}
-
-.moment {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #A41819;
-}
-
-.box {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.boxTitle {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-self: center;
-}
-
-.title {
-    font-weight: 700;
-    display: flex;
+    .mr {
+        margin-right: 2rem;
+    }
 }
 
 
+/* Tablet */
+@media screen and (min-width: 768px) {}
 
-.cours {
-    /* margin: auto; */
-    display: flex;
-    margin-top: 3rem;
-    align-items: start;
-}
-
-.mr {
-    margin-right: 2rem;
-}
-
-.button {
-    background-color: #A41819;
-    color: #fff;
-    border: 1px solid #fff;
-}
+/* Desktop */
+@media screen and (min-width: 768px) {}

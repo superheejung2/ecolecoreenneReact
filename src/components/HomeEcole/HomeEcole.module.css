@@ -24,91 +24,36 @@
         display: none;
     }
 
-    /* Mobile */
-    @media (min-width: 576px) {
+    .pwithIcons {
+        margin-top: 1.5rem;
+    }
 
-        .pwithIcons {
-            margin-top: 1.5rem;
-        }
+    .missions {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
 
-        .missions {
-            margin-top: 2.5rem;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .h1 {
-            margin-bottom: 2rem;
-        }
+    .h1 {
+        margin-bottom: 2rem;
     }
 }
+
+/* Mobile */
+@media (min-width: 576px) {}
 
 /* Tablet */
 @media screen and (min-width: 768px) {
 
     .container {
         max-width: 85%;
-        /* margin: auto; */
         margin-top: 3rem;
-    }
-
-    .pwithIcons {
-        margin-top: 2rem;
-    }
-
-    .missions {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .missonsAndIcon {
-        margin-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 7rem;
     }
 
     .box2 {
         display: block;
     }
-
-    .h1 {
-        margin-bottom: 2rem;
-    }
 }
 
 /* Desktop */
-@media screen and (min-width: 768px) {
-
-    .container {
-        max-width: 85%;
-        margin: auto;
-        margin-top: 3rem;
-    }
-
-    .pwithIcons {
-        margin-top: 2rem;
-    }
-
-    .missions {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .missonsAndIcon {
-        margin-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 7rem;
-    }
-
-    .h1 {
-        margin-bottom: 2rem;
-    }
-}
+@media screen and (min-width: 768px) {}
