@@ -51,55 +51,57 @@ export default function AddNewsletter() {
         <article>
             <div className={styles.bg}>
                 <div className={styles.container}>
-                    <h3>NEWSLETTER</h3>
-                    <div>
-                        <p>Abonnez-vous pour suivre notre </p>
-                        <form onSubmit={onSubmitHandler}>
-                            {/* <input type="file" accept="imge/*" name='file' /> */}
-                            <div className={styles.horizontal}>
-                                <div>
-                                    <label htmlFor='email'> Nom*  </label>
-                                    <input
-                                        type="text"
-                                        name="lastname"
-                                        id="lastname"
-                                        value={forms.lastname ?? ''}
-                                        required
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div>
-                                    <label htmlFor='email'> Prénom*  </label>
-                                    <input
-                                        type="text"
-                                        name="firstname"
-                                        id="firstname"
-                                        value={forms.lastname ?? ''}
-                                        required
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                                <div>
-                                    <label htmlFor='email'> Email*  </label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        value={forms.email ?? ''}
-                                        required
-                                        onChange={handleChange}
-                                    />
-                                </div>
-                            </div>
+                    <h3 className={styles.news}>Newsletter</h3>
+                    <div className={styles.abonnez}>
+                        Abonnez-vous pour suivre notre l’actualité </div>
 
+                    <form onSubmit={onSubmitHandler} >
+                        <div className={styles.horizontal}>
+                            <div >
+                                <label htmlFor='email'> Nom*  </label>
+                                <input
+                                    type="text"
+                                    name="lastname"
+                                    id="lastname"
+                                    value={forms.lastname ?? ''}
+                                    required
+                                    onChange={handleChange}
+                                    className={styles.mr}
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor='email'> Prénom*  </label>
+                                <input
+                                    type="text"
+                                    name="firstname"
+                                    id="firstname"
+                                    value={forms.firstname ?? ''}
+                                    required
+                                    onChange={handleChange}
+                                    className={styles.mr}
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor='email'> Email*  </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    value={forms.email ?? ''}
+                                    required
+                                    onChange={handleChange}
+                                    className={styles.mr}
+                                />
+                            </div>
 
                             <button type="submit" className={styles.button}>Envoyer</button>
                             {/* <input type='submit' value='add' /> */}
+                        </div>
 
-                        </form>
-                    </div >
-                </div>
+                    </form>
+                </div >
             </div>
+
         </article >
     )
 }

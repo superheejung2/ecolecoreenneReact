@@ -30,6 +30,10 @@
     display: flex;
 }
 
+p {
+    margin-left: 2rem;
+}
+
 /* .text {
     margin-right: 3rem;
     width: 60%;

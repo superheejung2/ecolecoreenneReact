@@ -1,28 +1,114 @@
-.container {
-    max-width: 85%;
-    margin: auto;
-    margin-top: 3rem;
+/*Mobile first */
+/*defaut */
+@media screen {
+    .container {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 1.8rem;
+    }
+
+    p {
+        color: #000
+    }
+
+    .missonsAndIcon {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 7rem;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    /* Mobile */
+    @media (min-width: 576px) {
+
+        .pwithIcons {
+            margin-top: 1.5rem;
+        }
+
+        .missions {
+            margin-top: 2.5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .h1 {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
-.pwithIcons {
-    margin-top: 2rem;
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 85%;
+        /* margin: auto; */
+        margin-top: 3rem;
+    }
+
+    .pwithIcons {
+        margin-top: 2rem;
+    }
+
+    .missions {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .missonsAndIcon {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 7rem;
+    }
+
+    .box2 {
+        display: block;
+    }
+
+    .h1 {
+        margin-bottom: 2rem;
+    }
 }
 
-.missions {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-around;
-}
+/* Desktop */
+@media screen and (min-width: 768px) {
 
-.missonsAndIcon {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 7rem;
-}
+    .container {
+        max-width: 85%;
+        margin: auto;
+        margin-top: 3rem;
+    }
 
-.h1 {
-    margin-bottom: 2rem;
+    .pwithIcons {
+        margin-top: 2rem;
+    }
+
+    .missions {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .missonsAndIcon {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 7rem;
+    }
+
+    .h1 {
+        margin-bottom: 2rem;
+    }
 }

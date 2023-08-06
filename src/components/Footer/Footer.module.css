@@ -1,18 +1,32 @@
 .footer {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     width: 100%;
     background-color: #000;
     color: #fff;
-    /* position: absolute;
-    bottom: 0; */
+}
 
+.container {
+    width: 85%;
+    margin: auto;
 }
 
 .nav {
     padding-top: 3rem;
-    padding-left: 3rem;
+    padding-bottom: 3rem;
+    color: #fff;
+    display: flex;
 }
 
 .navList {
     display: flex;
 }
+
+.ecole {
+    color: #fff;
+    padding-top: 8rem;
+}
+
+p {
+    color: #fff;
+}
+

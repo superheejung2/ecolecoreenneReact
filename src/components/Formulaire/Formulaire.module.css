@@ -1,6 +1,6 @@
 .form {
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
     /* width: 85%; */
 }
@@ -15,14 +15,13 @@
 .vertical {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .verticalMargin {
     display: flex;
     flex-direction: column;
     margin-left: 5rem;
-
-
 }
 
 .horizontal {
@@ -40,4 +39,8 @@
 
 .marginLeft {
     /* margin-left: 5rem; */
+}
+
+.mh {
+    min-height: 10rem;
 }

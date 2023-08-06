@@ -45,7 +45,7 @@ export default function Formulaire() {
     return (
         <article>
             <h1>Formulaire</h1>
-            <form onSubmit={onSubmitHandler}>
+            <form onSubmit={onSubmitHandler} className={styles.form}>
                 {/* <input type="file" accept="imge/*" name='file' /> */}
                 <div className={styles.horizontal}>
                     <div className={styles.vertical}>
@@ -90,11 +90,10 @@ export default function Formulaire() {
                         />
                     </div>
 
-
                 </div>
 
                 <div className={styles.vertical}>
-                    <label htmlFor='choix'> Objet de la demande  </label>
+                    <label htmlFor='choix'> Objet de la demande*  </label>
                     <input
                         type="text"
                         name="choix"
@@ -105,8 +104,8 @@ export default function Formulaire() {
                     />
                 </div>
                 <div className={styles.vertical}>
-                    <label htmlFor="content">Votre message</label>
-                    <textarea type="text" name="content" id="content" placeholder="Votre message"></textarea>
+                    <label htmlFor="content">Votre message* </label>
+                    <textarea type="text" name="content" id="content" placeholder="Votre message" className={styles.mh}></textarea>
 
                 </div>
                 <button type="submit" className={styles.button}>Envoyer</button>

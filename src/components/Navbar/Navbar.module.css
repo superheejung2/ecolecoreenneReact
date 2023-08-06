@@ -1,7 +1,6 @@
+/* Mobile */
 .mode {
     background-color: var(--color-nav);
-
-
 }
 
 .topBox {
@@ -17,29 +16,33 @@
 }
 
 .navbar img {
-    width: 15rem;
+    width: 10rem;
     margin-right: 2.5rem;
+}
 
+.btn {
+    margin-left: 4rem;
+    border: 0px;
+    /* border-color: var(--color-blue); */
 }
 
 .navbar {
     padding-top: 2rem;
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* vertical-align: bottom; */
-
 }
 
 nav a {
-    font-size: 1.6rem;
     display: inline;
     color: var(--color-text);
-    font-weight: bold;
     text-decoration: none;
-    padding: 1rem 2.5rem 0.3rem 2rem;
     transition: all .1s linear;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0.2rem 0.3rem 0.5rem;
 }
 
 nav a:hover {
@@ -49,11 +52,10 @@ nav a:hover {
     transition: transform 200ms ease-in-out;
 }
 
-.darkMode {
+/* .darkMode {
     border: 1px solid;
     border-color: 1px solid;
-
-}
+} */
 
 h1:hover:after {
     transform: scaleX(1);
@@ -61,4 +63,140 @@ h1:hover:after {
 
 nav a:focus {
     color: var(--color-red);
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .mode {
+        background-color: var(--color-nav);
+        font-size: 1.2rem;
+    }
+
+    .topBox {
+        background-color: var(--color-nav-top);
+        width: 100%;
+        height: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .navbar img {
+        width: 15rem;
+        margin-right: 1.2rem;
+    }
+
+    .navbar {
+        padding-top: 2rem;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* vertical-align: bottom; */
+    }
+
+    nav a {
+        display: inline;
+        color: var(--color-text);
+        font-weight: bold;
+        text-decoration: none;
+        transition: all .1s linear;
+        font-size: 1.6rem;
+        padding: 1rem 0.6rem 0.3rem 0.6rem;
+    }
+
+    nav a:hover {
+        color: var(--color-red);
+        border-bottom: solid 2px var(--color-red);
+        transform: scaleX(0);
+        transition: transform 200ms ease-in-out;
+    }
+
+    .darkMode {
+        border: 1px solid;
+        border-color: 1px solid;
+    }
+
+    h1:hover:after {
+        transform: scaleX(1);
+    }
+
+    nav a:focus {
+        color: var(--color-red);
+    }
+
+    .logo {
+        max-width: 5rem;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
+    .mode {
+        background-color: var(--color-nav);
+    }
+
+    .topBox {
+        background-color: var(--color-nav-top);
+        width: 100%;
+        height: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .navbar img {
+        width: 15rem;
+        margin-right: 2.5rem;
+    }
+
+    .navbar {
+        padding-top: 2rem;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* vertical-align: bottom; */
+
+    }
+
+    nav a {
+        display: inline;
+        color: var(--color-text);
+        font-weight: bold;
+        text-decoration: none;
+        transition: all .1s linear;
+        font-size: 1.6rem;
+        padding: 1rem 2rem 0.3rem 1.9rem;
+    }
+
+    nav a:hover {
+        color: var(--color-red);
+        border-bottom: solid 2px var(--color-red);
+        transform: scaleX(0);
+        transition: transform 200ms ease-in-out;
+    }
+
+    .darkMode {
+        border: 1px solid;
+        border-color: 1px solid;
+    }
+
+    h1:hover:after {
+        transform: scaleX(1);
+    }
+
+    nav a:focus {
+        color: var(--color-red);
+    }
 }

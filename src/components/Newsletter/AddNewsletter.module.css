@@ -9,4 +9,20 @@
 .container {
     width: 85%;
     margin: auto;
+    padding: 7rem 0;
+}
+
+.news {
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+
+.abonnez {
+    padding-bottom: 4rem;
+}
+
+.mr {
+    margin-right: 2rem;
 }

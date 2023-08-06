@@ -4,7 +4,9 @@ import { BsFacebook, BsInstagram, BsChevronDown } from 'react-icons/bs';
 import styles from './Navbar.module.css'
 import { useDarkMode } from "../../context/DarkModeContext";
 import { FiSun } from "react-icons/fi";
-import { BiSolidMoon } from "react-icons/bi"
+import { BiSolidMoon } from "react-icons/bi";
+import { AiFillHome } from "react-icons/ai";
+
 
 export default function Navbar() {
     const { darkMode, toggleDarkMode } = useDarkMode()
@@ -13,7 +15,7 @@ export default function Navbar() {
         <header>
             <div className={styles.mode}>
                 <div className={styles.topBox}></div>
-                <button onClick={toggleDarkMode} className={styles.darkMode}>
+                <button onClick={toggleDarkMode} className={styles.btn}>
                     {!darkMode && <FiSun />}
                     {darkMode && <BiSolidMoon />}
                 </button>
@@ -28,13 +30,13 @@ export default function Navbar() {
                         <nav>
                             <Link to="/">ACCEUIL </Link>
 
-                            <Link to="/ecole">ECOLE<BsChevronDown className={styles.iconstyle} /></Link>
+                            <Link to="/ecole">ECOLE</Link>
 
-                            <Link to="/cours">COURS<BsChevronDown className={styles.iconstyle} /></Link>
+                            <Link to="/cours">COURS</Link>
 
-                            <Link to="/info">INFOS UTILES<BsChevronDown className={styles.iconstyle} /></Link>
+                            <Link to="/info">INFOS UTILES</Link>
 
-                            <Link to="/contact">CONTACT<BsChevronDown className={styles.iconstyle} /></Link>
+                            <Link to="/contact">CONTACT</Link>
 
                             {/* {!user && <button onClick={handleLogin}>Login</button>}
                         {user && <button onClick={handleLogout}>Logout</button>} */}

@@ -15,8 +15,10 @@ h1 {
 
 
 .box {
+
     display: flex;
     align-items: center;
+
 }
 
 .box img {

@@ -6,37 +6,22 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <nav className={styles.nav}>
-                <div>Plan du site</div>
-                <div className={styles.navList}>
+            <div className={styles.container}>
 
-                    <Link to="/">ACCEUIL </Link>
+                <h1 className={styles.ecole}>Ecole coréenne de Nantes</h1>
 
-                    <ul>
-                        <li>Ecole</li>
-                        <li>Equipe</li>
-                        <li>Activités</li>
-                    </ul>
-                    <ul>
-                        <li>Cours</li>
-                        <li>Adult</li>
-                        <li>Enfant</li>
-                        <li>Inscription</li>
-                    </ul>
-                    <p>Contact</p>
-                </div>
-            </nav >
+                <nav className={styles.nav}>
+                    <p>Plan du site</p>
 
-            <nav>
+                    <Link to="/ecole"><p>Ecole </p></Link>
 
-                <Link to="/ecole">ECOLE </Link>
+                    <Link to="/cours"><p>Cours</p> </Link>
 
-                <Link to="/cours">COURS </Link>
+                    <Link to="/info"><p>Info Utiles  </p></Link>
 
-                <Link to="/info">INFOS UTILES </Link>
-
-                <Link to="/contact">CONTACT</Link>
-            </nav>
+                    <Link to="/contact"><p>Contact </p></Link>
+                </nav>
+            </div>
         </footer>
     )
 }
