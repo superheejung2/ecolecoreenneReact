@@ -8,6 +8,8 @@ export default function UpdateInfoUtileArticle() {
 
     const { id } = useParams();
     const [articleDetail, setArticleDetail] = useState({});
+    // const [articleDetail2, setArticleDetail2] = useState({});
+
 
     useEffect(() => {
         Axios.get(`http://localhost:8000/info/${id}`)
@@ -22,6 +24,9 @@ export default function UpdateInfoUtileArticle() {
 
     const updateArticle = () => {
         // Effectuez la mise à jour de l'article en utilisant l'API
+        console.log(id);
+        console.log(articleDetail.content);
+
         Axios.put(`http://localhost:8000/info/${id}`, {
             title: articleDetail.title,
             url: articleDetail.url,
@@ -38,7 +43,7 @@ export default function UpdateInfoUtileArticle() {
             });
     };
 
-    const getValue = (e) => {
+    const setValue = (e) => {
         const { name, value } = e.target;
         setArticleDetail({
             ...articleDetail,
@@ -53,20 +58,20 @@ export default function UpdateInfoUtileArticle() {
                 <div>
                     <input
                         type='text'
-                        value={articleDetail[0].title}
-                        onChange={getValue}
+                        value={articleDetail[0].title || ''}
+                        onChange={setValue}
                         name='title'
                     />
                     <input
                         type='text'
-                        value={articleDetail[0].url}
-                        onChange={getValue}
+                        value={articleDetail[0].url || ''}
+                        onChange={setValue}
                         name='url'
                     />
 
                     <CKEditor
                         editor={ClassicEditor}
-                        data={articleDetail[0].content}
+                        data={articleDetail[0].content || ''}
 
                         onReady={(editor) => {
                             console.log('Editor is ready to use!', editor);
@@ -86,7 +91,8 @@ export default function UpdateInfoUtileArticle() {
                         }}
                     />
 
-                </div>}
+                </div>
+            }
 
             <button
                 className='submit-button'
@@ -97,3 +103,4 @@ export default function UpdateInfoUtileArticle() {
         </div>
     );
 }
+//   ) }

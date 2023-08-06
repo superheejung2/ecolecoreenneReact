@@ -13,7 +13,7 @@ export default function Navbar() {
         <header>
             <div className={styles.mode}>
                 <div className={styles.topBox}></div>
-                <button onClick={toggleDarkMode} >
+                <button onClick={toggleDarkMode} className={styles.darkMode}>
                     {!darkMode && <FiSun />}
                     {darkMode && <BiSolidMoon />}
                 </button>
@@ -35,6 +35,7 @@ export default function Navbar() {
                             <Link to="/info">INFOS UTILES<BsChevronDown className={styles.iconstyle} /></Link>
 
                             <Link to="/contact">CONTACT<BsChevronDown className={styles.iconstyle} /></Link>
+
                             {/* {!user && <button onClick={handleLogin}>Login</button>}
                         {user && <button onClick={handleLogout}>Logout</button>} */}
 

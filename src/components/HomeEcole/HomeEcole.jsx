@@ -4,9 +4,7 @@ import { PiStudentFill } from "react-icons/pi";
 import { RiExchangeLine } from "react-icons/ri";
 import { CgCommunity } from "react-icons/cg";
 import { BiHappyHeartEyes } from "react-icons/bi";
-
-
-
+import { Link } from "react-router-dom";
 
 
 export default function HomeEcole() {
@@ -18,10 +16,17 @@ export default function HomeEcole() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, exercitationem minima ipsa voluptatibus tempora totam sed perspiciatis tempore. Iste ipsa maiores quos beatae distinctio autem voluptatibus laborum eos, asperiores vitae.
                     Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores!
                     Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores!
-
                 </p>
-                <button>En savoir plus</button>
+
+                <p className={styles.p}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, exercitationem minima ipsa voluptatibus tempora totam sed perspiciatis tempore. Iste ipsa maiores quos beatae distinctio autem voluptatibus laborum eos, asperiores vitae.
+                    Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores!
+                    Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores!
+                </p>
+
+                <Link to="/ecole"><button className={styles.button}>En savoir plus</button></Link>
             </div>
+
             <div className={styles.missions}>
                 <div className={styles.missonsAndIcon}>
                     <PiStudentFill />

@@ -49,10 +49,11 @@ nav a:hover {
     transition: transform 200ms ease-in-out;
 }
 
-/* .darkMode {
-    display: flex;
-    justify-content: flex-end;
-} */
+.darkMode {
+    border: 1px solid;
+    border-color: 1px solid;
+
+}
 
 h1:hover:after {
     transform: scaleX(1);

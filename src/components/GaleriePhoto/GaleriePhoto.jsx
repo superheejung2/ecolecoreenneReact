@@ -6,7 +6,9 @@ export default function GaleriePhoto() {
     return (
         <article>
             <div className={styles.bg}>
-                <p>Épanouissez-vous avec le coréen</p>
+                <div className={styles.textBox}>
+                    <p className={styles.p}>Épanouissez-vous avec le coréen</p>
+                </div>
             </div>
             <div>
                 <h3>Nos événements</h3>

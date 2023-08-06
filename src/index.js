@@ -6,8 +6,8 @@ import App from './App';
 import Home from './pages/Home';
 import Ecole from './pages/Ecole';
 import Cours from './pages/Cours';
+import Contact from './pages/Contact'
 import InfosUtiles from './pages/InfosUtiles';
-import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
@@ -18,6 +18,7 @@ import AddInfoUtileArticle from "./components/AddInfoUtileArticle/AddInfoUtileAr
 import InfoUtileArticleUpdate from "./components/InfoUtileArticleUpdate/InfoUtileArticleUpdate"
 import InfoUtileDetail from "./pages/InfoUtileDetail"
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,18 +28,14 @@ const router = createBrowserRouter([
       { index: true, path: '/', element: <Home /> },
       {
         path: '/ecole',
-        element: <Ecole />,
+        element: <Ecole />
       },
-      // {
-      //   path: '/add_newsletter',
-      //   element: <CreateNewsletter />,
-      // },
       {
         path: '/cours',
-        element: <Cours />,
+        element: <Cours />
       },
       {
-        path: '/cours/:coursId',
+        path: '/cours/:id',
         element: <CoursDetail />,
       },
       {
@@ -47,9 +44,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/contact',
-        element: <Contact />,
+        element: <Contact />
       },
-
       {
         path: '/addinfoutilearticle',
         element: <AddInfoUtileArticle />,
@@ -58,6 +54,7 @@ const router = createBrowserRouter([
         path: '/info/:id',
         element: <InfoUtileDetail />,
       },
+
 
       {
         path: '/login',
@@ -72,6 +69,7 @@ const router = createBrowserRouter([
         path: '/infoupdate/:id',
         element: <InfoUtileArticleUpdate />,
       },
+
     ]
   }
 ])
