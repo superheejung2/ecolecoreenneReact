@@ -5,9 +5,14 @@
     background: linear-gradient(90deg, rgba(255, 222, 89, 1) 14%, rgba(255, 145, 77, 1) 100%);
 }
 
-.textBox {
+.textBox,
+.textBox2 {
     width: 85%;
     margin: auto;
+}
+
+.textBox2 {
+    margin-bottom: 4rem;
 }
 
 .p {
@@ -16,3 +21,16 @@
     padding: 3.5rem 0;
     font-size: 3rem;
 }
+
+.evenement {
+    margin: 2rem 0;
+}
+
+.galerie {
+    display: flex;
+}
+
+/* .text {
+    margin-right: 3rem;
+    width: 60%;
+} */

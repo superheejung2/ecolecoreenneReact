@@ -36,9 +36,9 @@ export default function AddNewsletter() {
                 firstname: '',
                 lastname: '',
                 email: '',
-                tel: '',
-                choix: '',
-                content: ''
+                // tel: '',
+                // choix: '',
+                // content: ''
             }));
 
         } catch (error) {
@@ -49,32 +49,57 @@ export default function AddNewsletter() {
 
     return (
         <article>
-            <h3>NEWSLETTER</h3>
-            <div className={styles.horizontal}>
-                <p>Abonnez-vous pour suivre notre </p>
-                <form onSubmit={onSubmitHandler}>
-                    {/* <input type="file" accept="imge/*" name='file' /> */}
-                    <div className={styles.vertical}>
-                        <div>
-                            <label htmlFor='email'> Email*  </label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                value={forms.email ?? ''}
-                                required
-                                onChange={handleChange}
-                            />
-                        </div>
-                    </div>
+            <div className={styles.bg}>
+                <div className={styles.container}>
+                    <h3>NEWSLETTER</h3>
+                    <div>
+                        <p>Abonnez-vous pour suivre notre </p>
+                        <form onSubmit={onSubmitHandler}>
+                            {/* <input type="file" accept="imge/*" name='file' /> */}
+                            <div className={styles.horizontal}>
+                                <div>
+                                    <label htmlFor='email'> Nom*  </label>
+                                    <input
+                                        type="text"
+                                        name="lastname"
+                                        id="lastname"
+                                        value={forms.lastname ?? ''}
+                                        required
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor='email'> Prénom*  </label>
+                                    <input
+                                        type="text"
+                                        name="firstname"
+                                        id="firstname"
+                                        value={forms.lastname ?? ''}
+                                        required
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor='email'> Email*  </label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        value={forms.email ?? ''}
+                                        required
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                            </div>
 
 
-                    <button type="submit" className={styles.button}>Envoyer</button>
-                    {/* <input type='submit' value='add' /> */}
+                            <button type="submit" className={styles.button}>Envoyer</button>
+                            {/* <input type='submit' value='add' /> */}
 
-                </form>
-            </div >
-
+                        </form>
+                    </div >
+                </div>
+            </div>
         </article >
     )
 }

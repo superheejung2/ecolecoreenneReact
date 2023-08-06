@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './GaleriePhoto.module.css'
+import styles from './GaleriePhoto.module.css';
+import Carousel from "nuka-carousel"
 
 
 export default function GaleriePhoto() {
@@ -10,12 +11,23 @@ export default function GaleriePhoto() {
                     <p className={styles.p}>Épanouissez-vous avec le coréen</p>
                 </div>
             </div>
-            <div>
-                <h3>Nos événements</h3>
-                <img src='/img/atelier2.jpg' alt="atelier de coréen" className={styles.img}></img>
+            <div className={styles.textBox2}>
+                <h1 className={styles.evenement}>Nos événements</h1>
+                <div className={styles.galerie}>
+                    <div className={styles.img}>
+                        <Carousel autoplay autoplayInterval="4000" disableEdgeSwiping >
+                            <img src='/img/atelier2.jpg' alt="atelier de coréen"></img>
+                            <img src='/img/cours_enfant.png' alt='apprenons le coréen'></img>
+                            <img src='/img/homeImgpie2.png' alt='apprenons le coréen' ></img>
+                        </Carousel>
+                    </div>
+                    <div className={styles.text}>
+                        <p>Et perspiciatis veniam et eius dolores et omnis fuga id labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
+                    </div>
+                </div>
 
-            </div>
-        </article>
+            </div >
+        </article >
 
     )
 }
