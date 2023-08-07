@@ -15,6 +15,7 @@ export default function Courses() {
                     Quibusdam inventore illo animi repellendus asperiores! Facilis recusandae ipsum eaque, exercitationem obcaecati optio nulla nesciunt porro. Repudiandae consequuntur, earum doloremque possimus, esse nesciunt provident facilis, dicta aliquam iure tempore debitis?
                 </p>
             </div>
+
         </div>
     )
 }

@@ -39,6 +39,8 @@
     .p3 {
         display: none;
     }
+
+
 }
 
 /* Mobile */
@@ -61,4 +63,9 @@
     .galerie {
         display: flex;
     }
+
+    .p3 {
+        display: block;
+    }
+
 }

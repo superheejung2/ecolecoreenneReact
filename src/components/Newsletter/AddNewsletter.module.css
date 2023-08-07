@@ -6,11 +6,17 @@
     display: flex;
 }
 
-.container {
+.container,
+h1 {
     width: 85%;
     margin: auto;
+}
+
+.container {
     padding: 7rem 0;
 }
+
+
 
 .news {
     text-transform: uppercase;

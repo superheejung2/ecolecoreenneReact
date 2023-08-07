@@ -9,7 +9,6 @@ export default function Formulaire() {
         firstname: '',
         lastname: '',
         email: '',
-        tel: '',
         choix: '',
         content: ''
     });
@@ -26,7 +25,6 @@ export default function Formulaire() {
 
         try {
             await axios.post(SERVER_URL, forms);
-            // fetchData();
             setForms(prevForms => ({
                 ...prevForms,
                 firstname: '',
@@ -41,12 +39,11 @@ export default function Formulaire() {
         };
     }
 
-
     return (
         <article>
             <h1>Formulaire</h1>
             <form onSubmit={onSubmitHandler} className={styles.form}>
-                {/* <input type="file" accept="imge/*" name='file' /> */}
+
                 <div className={styles.horizontal}>
                     <div className={styles.vertical}>
                         <label htmlFor='firstname'> Nom* </label>
@@ -89,6 +86,19 @@ export default function Formulaire() {
 
                         />
                     </div>
+                    <div className={styles.vertical}>
+                        <label htmlFor='tel'> Tel  </label>
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            value={forms.tel ?? ''}
+                            required
+                            onChange={handleChange}
+                            className={styles.input}
+
+                        />
+                    </div>
 
                 </div>
 
@@ -105,7 +115,16 @@ export default function Formulaire() {
                 </div>
                 <div className={styles.vertical}>
                     <label htmlFor="content">Votre message* </label>
-                    <textarea type="text" name="content" id="content" placeholder="Votre message" className={styles.mh}></textarea>
+                    <textarea
+                        type="text"
+                        name="content"
+                        id="content"
+                        placeholder="Votre message"
+                        className={styles.mh}
+                        value={forms.content ?? ''}
+                        onChange={handleChange}
+                        required>
+                    </textarea>
 
                 </div>
                 <button type="submit" className={styles.button}>Envoyer</button>

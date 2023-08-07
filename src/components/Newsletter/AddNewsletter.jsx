@@ -3,49 +3,69 @@ import styles from './AddNewsletter.module.css'
 import axios from 'axios';
 
 
-const SERVER_URL = 'http://localhost:8000/contact';
-
-
+const SERVER_URL = '/newsletter';
 
 export default function AddNewsletter() {
+
     const [forms, setForms] = useState({
         firstname: '',
         lastname: '',
         email: '',
-        tel: '',
-        choix: '',
-        content: ''
     });
 
-    const handleChange = (e) => {
+    const handleChange = e => {
         const { name, value } = e.target;
-        setForms((prevForms) => ({
-            ...prevForms, [name]: value,
+        setForms((prevName) => ({
+            ...prevName, [name]: value
         }));
-    };
-
+    }
 
     const onSubmitHandler = async (e) => {
         e.preventDefault();
+        // console.log(logins)
 
         try {
             await axios.post(SERVER_URL, forms);
-            // fetchData();
-            setForms(prevForms => ({
-                ...prevForms,
-                firstname: '',
-                lastname: '',
-                email: '',
-                // tel: '',
-                // choix: '',
-                // content: ''
-            }));
+            alert('Enrégistré!');
+        }
 
-        } catch (error) {
-            console.error(error);
-        };
+        catch (error) {
+            console.log(error);
+        }
     }
 
+    //첫번째로 시도하던 것 
+    // const onSubmitHandler = async (e) => {
+    //     e.preventDefault();
+
+    //     try {
+    //         await axios.post('SERVER_URL', {
+    //             firstname: forms.firstname,
+    //             lastname: forms.lastname,
+    //             email: forms.email,
+    //         }
+    //         )
+
+    //     } catch (error) {
+    //         console.error(error);
+    //     };
+
+    // 마지막으로 시도하던 것 
+    // const onSubmitHandler = (e) => {
+    //     e.preventDefault();
+    //     axios.post('http://localhost:8000/newsletter', {
+    //         firstname: forms.firstname,
+    //         lastname: forms.lastname,
+    //         email: forms.email,
+    //     }).then(() => {
+    //         alert('Enrégistré!');
+    //         setForms({
+    //             firstname: '',
+    //             lastname: '',
+    //             email: '',
+    //         });
+    //     })
+    // };
 
     return (
         <article>
@@ -63,7 +83,7 @@ export default function AddNewsletter() {
                                     type="text"
                                     name="lastname"
                                     id="lastname"
-                                    value={forms.lastname ?? ''}
+                                    value={forms.lastname}
                                     required
                                     onChange={handleChange}
                                     className={styles.mr}
@@ -75,7 +95,7 @@ export default function AddNewsletter() {
                                     type="text"
                                     name="firstname"
                                     id="firstname"
-                                    value={forms.firstname ?? ''}
+                                    value={forms.firstname}
                                     required
                                     onChange={handleChange}
                                     className={styles.mr}

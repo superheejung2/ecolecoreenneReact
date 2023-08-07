@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 // import { Link } from 'react-router-dom';
 import Button from '../ui/Button';
+import styles from './ListNewsletter.module.css'
 
 
 
@@ -17,9 +18,10 @@ export default function ListNewsletter() {
     }, [])
 
     return (
-        <div>
+        <article>
             {/* <Link to="/AddNewsletterInHome">Add+</Link> */}
-            <Button>Add+</Button>
+
+            <h1>Newsletter</h1>
             <table>
                 <thead>
                     <tr>
@@ -47,6 +49,6 @@ export default function ListNewsletter() {
                 </tbody>
             </table>
 
-        </div>
+        </article>
     )
 }

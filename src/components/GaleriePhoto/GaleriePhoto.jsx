@@ -15,10 +15,11 @@ export default function GaleriePhoto() {
                 <h1 className={styles.evenement}>Nos événements</h1>
                 <div className={styles.galerie}>
                     <div className={styles.img}>
-                        <Carousel autoplay autoplayInterval="4000" disableEdgeSwiping >
-                            <img src='/img/atelier2.jpg' alt="atelier de coréen"></img>
-                            <img src='/img/cours_enfant.png' alt='apprenons le coréen'></img>
-                            <img src='/img/homeImgpie2.png' alt='apprenons le coréen' ></img>
+                        <Carousel autoplay autoplayInterval="3000" disableEdgeSwiping >
+                            <img src='/img/evenement_jardin.jpg' alt='atelier avec enfant dans jardin' ></img>
+                            <img src='/img/forum.jpg' alt='forum des association avec maire de Nantes' ></img>
+                            <img src='/img/evenement_group.jpg' alt='evenement nouvel an' ></img>
+                            <img src='/img/evenement_girl.jpg' alt='costume traditionel coréen' ></img>
                         </Carousel>
                     </div>
                     <div className={styles.text}>

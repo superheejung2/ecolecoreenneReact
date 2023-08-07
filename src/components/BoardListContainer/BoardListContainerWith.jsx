@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { format } from 'date-fns';
+import styles from './BoardListContainer.module.css'
 
 export default function BoardListContainer() {
     const [formContact, setFormContact] = useState([]);
@@ -25,11 +26,11 @@ export default function BoardListContainer() {
     };
 
     return (
-        <div>
+        <div >
             {isLoading ? (
                 <p>Loading...</p>
             ) : (
-                <table>
+                <table className={styles.container}>
                     <caption>Formulaire</caption>
                     <thead>
                         <tr>
@@ -41,6 +42,7 @@ export default function BoardListContainer() {
                             <th> Objet</th>
                             <th> Content </th>
                             <th> Date </th>
+                            <th> Traitement </th>
                             <th> Modification </th>
                         </tr>
                     </thead>
@@ -54,6 +56,7 @@ export default function BoardListContainer() {
                                 <td>{data.tel} </td>
                                 <td>{data.choix} </td>
                                 <td>{data.content} </td>
+                                <td>{data.traitement} </td>
                                 <td>{formatDateFrench(data.date)}</td>
                                 <td>
                                     <button>Update</button>

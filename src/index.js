@@ -13,7 +13,7 @@ import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import CoursDetail from './pages/CoursDetail';
-import CreateNewsletter from './components/Newsletter/CreateNewsletter';
+// import CreateNewsletter from './components/Newsletter/CreateNewsletter';
 import AddInfoUtileArticle from "./components/AddInfoUtileArticle/AddInfoUtileArticle"
 import InfoUtileArticleUpdate from "./components/InfoUtileArticleUpdate/InfoUtileArticleUpdate"
 import InfoUtileDetail from "./pages/InfoUtileDetail"
@@ -26,6 +26,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, path: '/', element: <Home /> },
+
       {
         path: '/ecole',
         element: <Ecole />
@@ -54,8 +55,6 @@ const router = createBrowserRouter([
         path: '/info/:id',
         element: <InfoUtileDetail />,
       },
-
-
       {
         path: '/login',
         element: <Login />,

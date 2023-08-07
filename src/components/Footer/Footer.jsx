@@ -11,15 +11,18 @@ export default function Footer() {
                 <h1 className={styles.ecole}>Ecole coréenne de Nantes</h1>
 
                 <nav className={styles.nav}>
-                    <p>Plan du site</p>
+                    <div>
+                        <p className={styles.plan}>Plan du site</p>
+                    </div>
+                    <div className={styles.flex}>
+                        <Link to="/ecole"><p className={styles.white}>Ecole </p></Link>
 
-                    <Link to="/ecole"><p>Ecole </p></Link>
+                        <Link to="/cours"><p className={styles.white}>Cours</p> </Link>
 
-                    <Link to="/cours"><p>Cours</p> </Link>
+                        <Link to="/info"><p className={styles.white}>Info Utiles  </p></Link>
 
-                    <Link to="/info"><p>Info Utiles  </p></Link>
-
-                    <Link to="/contact"><p>Contact </p></Link>
+                        <Link to="/contact"><p className={styles.white}>Contact </p></Link>
+                    </div>
                 </nav>
             </div>
         </footer>

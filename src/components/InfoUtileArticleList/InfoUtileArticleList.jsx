@@ -6,6 +6,7 @@ import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 
+
 export default function InfoUtileArticleList() {
     const [viewContent, setViewContent] = useState([]);
     const [currentPage, setCurrentPage] = useState(0); // La page actuelle, indexée à partir de 0
@@ -64,9 +65,14 @@ export default function InfoUtileArticleList() {
         <div>
             <h1>Info Utiles</h1>
 
-            <Link to="/addinfoutilearticle">
-                <button>Ajouter un article</button>
-            </Link>
+            <div className={styles.btn}>
+                <Link to="/addinfoutilearticle">
+
+                    <button className={styles.button}>Ajouter un article</button>
+
+                </Link>
+            </div>
+
 
             <table>
                 <thead>

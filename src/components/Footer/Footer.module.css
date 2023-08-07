@@ -2,7 +2,6 @@
     /* margin-top: 6rem; */
     width: 100%;
     background-color: #000;
-    color: #fff;
 }
 
 .container {
@@ -11,10 +10,10 @@
 }
 
 .nav {
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
-    color: #fff;
     display: flex;
+    flex-direction: column;
 }
 
 .navList {
@@ -26,7 +25,15 @@
     padding-top: 8rem;
 }
 
-p {
+.plan,
+.white {
     color: #fff;
 }
 
+.plan {
+    font-size: 2rem;
+}
+
+.flex {
+    display: flex;
+}
