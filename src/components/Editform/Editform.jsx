@@ -27,59 +27,25 @@ export default function Editform() {
 
     const updateArticle = async (e) => {
         e.preventDefault();
-
         try {
             await axios.post(`http://localhost:8000/contact/${id}`, {
-                // firstname: forms.firstname,
-                // lastname: froms.lastname,
-                // email: forms.email,
-                // tel: forms.tel,
-                // choix: forms.choix,
-                // content: forms.content,
                 traitement: forms.traitement
             });
-            alert('enrégistré')
+            console.log(forms.traitement)
+            alert('Modifié');
+            // redirection for page admin after update 
+            window.location.replace('/admin');
+
         } catch (error) {
             console.error(error);
         };
     }
 
-
-
-
-    // const updateArticle = () => {
-    //     // Effectuez la mise à jour de l'article en utilisant l'API
-    //     console.log(id);
-    //     console.log(forms.content);
-
-    //     axios.post(`http://localhost:8000/updateinfo/${id}`, {
-    //         title: forms.title,
-    //         url: forms.url,
-    //         alt: forms.alt,
-    //         content: forms.content,
-    //     })
-    //         .then(() => {
-    //             console.log(formDetail.content);
-    //             alert('Article est update avec succès!');
-    //             // Redirigez l'utilisateur vers la page d'administration après la mise à jour réussie
-    //             window.location.replace('/admin');
-    //         })
-    //         .catch((error) => {
-    //             alert('Erreur');
-    //         });
-    // };
-
-    //for the date dd/mm/yyyy
-    // const formatDateFrench = (dateStr) => {
-    //     const date = new Date(dateStr);
-    //     return format(date, 'dd/MM/yyyy');
-    // };
-
     const deleteArticle = () => {
         axios.post(`http://localhost:8000/contact/${id}`)
             .then(() => {
                 alert('une demande de formulaire est effacé!');
-                // Redirigez l'utilisateur vers la page d'administration après la mise à jour réussie
+                // redirection for page admin after update                
                 window.location.replace('/admin');
             })
             .catch((error) => {
@@ -91,7 +57,8 @@ export default function Editform() {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForms((prevForms) => ({
-            ...prevForms, [name]: value,
+            ...prevForms,
+            [name]: value,
         }));
     };
 
@@ -127,7 +94,7 @@ export default function Editform() {
                     </div>
 
                     <div className={styles.horizontal}>
-                        <h3> Objet de la demande* </h3>
+                        <h3> Objet de la demande </h3>
                         <div>{forms[0].choix}</div>
                     </div>
 
@@ -135,8 +102,7 @@ export default function Editform() {
                         <h3> Traitement </h3>
                         <input
                             type="text"
-                            name="content"
-                            value={forms[0].traitement ?? ''}
+                            name="traitement"
                             className={styles.inputhorizontal}
                             onChange={handleChange}
                         />
@@ -148,14 +114,12 @@ export default function Editform() {
                 </div>
             )}
             <button
-                className='submit-button'
                 onClick={updateArticle}
             >
                 Mettre à jour
             </button>
 
             <button
-                className='submit-button'
                 onClick={deleteArticle}
             >Delete
             </button>
