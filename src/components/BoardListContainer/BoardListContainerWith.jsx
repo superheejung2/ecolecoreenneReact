@@ -50,8 +50,8 @@ export default function BoardListContainer() {
                             <th> Tel</th>
                             <th> Objet</th>
                             <th> Content </th>
-                            <th> Date </th>
                             <th> Traitement </th>
+                            <th> Date </th>
                             <th> Modification </th>
                         </tr>
                     </thead>

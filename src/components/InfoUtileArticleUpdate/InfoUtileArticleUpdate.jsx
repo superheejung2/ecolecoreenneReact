@@ -42,13 +42,11 @@ export default function UpdateInfoUtileArticle() {
             });
     };
 
-
-
     const deleteArticle = () => {
         axios.post(`http://localhost:8000/deleteinfo/${id}`)
             .then(() => {
                 alert('Article est effacé!');
-                // Redirigez l'utilisateur vers la page d'administration après la mise à jour réussie
+                // redirection for page admin after update                
                 window.location.replace('/admin');
             })
             .catch((error) => {
@@ -108,14 +106,12 @@ export default function UpdateInfoUtileArticle() {
             }
 
             <button
-                className='submit-button'
                 onClick={updateArticle}
             >
                 Mettre à jour
             </button>
 
             <button
-                className='submit-button'
                 onClick={deleteArticle}
             >Delete
             </button>

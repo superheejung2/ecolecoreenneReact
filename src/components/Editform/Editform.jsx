@@ -42,7 +42,7 @@ export default function Editform() {
     }
 
     const deleteArticle = () => {
-        axios.post(`http://localhost:8000/contact/${id}`)
+        axios.post(`http://localhost:8000/deletecontact/${id}`)
             .then(() => {
                 alert('une demande de formulaire est effacé!');
                 // redirection for page admin after update                
