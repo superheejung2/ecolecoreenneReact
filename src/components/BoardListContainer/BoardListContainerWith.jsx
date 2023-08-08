@@ -67,15 +67,16 @@ export default function BoardListContainer() {
                                 <td>{data.content} </td>
                                 <td>{truncate(data.traitement, 100)} </td>
                                 <td>{formatDateFrench(data.date)}</td>
-                                <Link to={"/editform"}>
+                                <Link to={`/editform/${data.id}`}>
                                     <button><AiFillDelete /><AiFillEdit /></button>
                                 </Link>
                             </tr>
                         ))}
                     </tbody>
                 </table>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 }
 

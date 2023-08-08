@@ -11,10 +11,13 @@ export default function Editform() {
     const [isLoading, setLoading] = useState(true);
 
     useEffect(() => {
+        console.log(id);
         axios.get(`http://localhost:8000/contact/${id}`)
             .then((response) => {
                 console.log(response.data);
                 setForms(response.data);
+                setLoading(false);
+
             })
             .catch((error) => {
                 console.log('Erreur');
@@ -87,7 +90,7 @@ export default function Editform() {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        forms((prevForms) => ({
+        setForms((prevForms) => ({
             ...prevForms, [name]: value,
         }));
     };
@@ -102,30 +105,30 @@ export default function Editform() {
                 <div>
                     <div className={styles.horizontal}>
                         <h3> Nom</h3>
-                        <div>{forms.firstname}</div>
+                        <div>{forms[0].firstname}</div>
                     </div>
 
                     <div className={styles.horizontal}>
                         <h3> prénom</h3>
-                        <div>{forms.lastname}</div>
+                        <div>{forms[0].lastname}</div>
                     </div>
                     <div className={styles.horizontal}>
                         <h3> Email </h3>
-                        <div>{forms.email}</div>
+                        <div>{forms[0].email}</div>
                     </div>
                     <div className={styles.horizontal}>
                         <h3> Tel </h3>
-                        <div>{forms.tel}</div>
+                        <div>{forms[0].tel}</div>
                     </div>
 
                     <div className={styles.horizontal}>
                         <h3> Date </h3>
-                        <div>{forms.date}</div>
+                        <div>{forms[0].date}</div>
                     </div>
 
                     <div className={styles.horizontal}>
                         <h3> Objet de la demande* </h3>
-                        <div>{forms.choix}</div>
+                        <div>{forms[0].choix}</div>
                     </div>
 
                     <div className={styles.horizontal}>
@@ -133,14 +136,14 @@ export default function Editform() {
                         <input
                             type="text"
                             name="content"
-                            value={forms.traitement ?? ''}
+                            value={forms[0].traitement ?? ''}
                             className={styles.inputhorizontal}
                             onChange={handleChange}
                         />
                     </div>
                     <div className={styles.horizontal}>
                         <h3> Content </h3>
-                        <div>{forms.content}</div>
+                        <div>{forms[0].content}</div>
                     </div>
                 </div>
             )}

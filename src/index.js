@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         element: <Logincreate />,
       },
       {
-        path: '/editform',
+        path: '/editform/:id',
         element: <Editform />,
       },
     ]
