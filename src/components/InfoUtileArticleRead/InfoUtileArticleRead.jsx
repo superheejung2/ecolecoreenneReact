@@ -6,7 +6,7 @@ import ReactHtmlParser from 'react-html-parser';
 
 
 
-//카드 형태로 여러개의 목록으로 불러와짐. 현재는 infos utiles 페이지에서 사용
+//components showing like card in page 
 export default function InfoUtileArticleRead() {
 
     const [viewContent, setViewContent] = useState([]);

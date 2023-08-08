@@ -6,6 +6,11 @@
     margin-left: 3rem;
 }
 
+.input {
+
+    margin: 2rem 10rem 2rem 0;
+}
+
 .login {
     /* width: 85%; */
     margin: auto;
@@ -15,10 +20,4 @@
 
 .nouvelle {
     margin-top: 3rem;
-}
-
-.darkMode {
-    border: none;
-    padding: 0;
-    background: none;
 }

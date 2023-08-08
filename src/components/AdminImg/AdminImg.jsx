@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './AdminImg.module.css'
 
+//image of page Admin
 export default function AdminImg() {
     return (
         <div className={styles.center}>

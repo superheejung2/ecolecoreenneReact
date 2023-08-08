@@ -4,6 +4,8 @@ import axios from 'axios';
 
 const SERVER_URL = 'http://localhost:8000/contact';
 
+
+// editing contact form by user 
 export default function Formulaire() {
     const [forms, setForms] = useState({
         firstname: '',
@@ -25,6 +27,7 @@ export default function Formulaire() {
 
         try {
             await axios.post(SERVER_URL, forms);
+            alert('enrégistré')
             setForms(prevForms => ({
                 ...prevForms,
                 firstname: '',
@@ -86,7 +89,7 @@ export default function Formulaire() {
 
                         />
                     </div>
-                    <div className={styles.vertical}>
+                    <div className={styles.verticalMargin}>
                         <label htmlFor='tel'> Tel  </label>
                         <input
                             type="tel"
@@ -128,7 +131,6 @@ export default function Formulaire() {
 
                 </div>
                 <button type="submit" className={styles.button}>Envoyer</button>
-                {/* <input type='submit' value='add' /> */}
             </form>
         </article >
     )

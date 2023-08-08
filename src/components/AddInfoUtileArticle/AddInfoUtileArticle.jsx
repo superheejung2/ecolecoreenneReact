@@ -5,6 +5,9 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import Axios from 'axios';
 
 
+
+//for editing a new adrticle of infos utiles 
+
 export default function AddInfoUtileArticle() {
 
     const [infoContent, setInfoContent] = useState({

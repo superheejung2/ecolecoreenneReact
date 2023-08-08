@@ -1,9 +1,0 @@
-.container {
-    width: 85%;
-    margin: auto;
-}
-
-.form {
-    width: 600px;
-    border: 2px solid var(--color-red);
-}

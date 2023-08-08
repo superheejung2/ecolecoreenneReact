@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Axios from 'axios';
+import axios from 'axios';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
@@ -8,14 +8,13 @@ export default function UpdateInfoUtileArticle() {
 
     const { id } = useParams();
     const [articleDetail, setArticleDetail] = useState({});
-    // const [articleDetail2, setArticleDetail2] = useState({});
-
 
     useEffect(() => {
-        Axios.get(`http://localhost:8000/info/${id}`)
+        axios.get(`http://localhost:8000/info/${id}`)
             .then((response) => {
                 console.log(response.data);
                 setArticleDetail(response.data);
+
             })
             .catch((error) => {
                 console.log('Erreur');
@@ -25,12 +24,12 @@ export default function UpdateInfoUtileArticle() {
     const updateArticle = () => {
         // Effectuez la mise à jour de l'article en utilisant l'API
         console.log(id);
-        console.log(articleDetail.content);
+        console.log(articleDetail.title);
 
-        Axios.put(`http://localhost:8000/info/${id}`, {
-            title: articleDetail.title,
-            url: articleDetail.url,
-            alt: articleDetail.alt,
+        axios.post(`http://localhost:8000/updateinfo/${id}`, {
+            title: articleDetail[0].title,
+            url: articleDetail[0].url,
+            // alt: articleDetail.alt,
             content: articleDetail.content,
         })
             .then(() => {
@@ -43,9 +42,24 @@ export default function UpdateInfoUtileArticle() {
             });
     };
 
+
+
+    const deleteArticle = () => {
+        axios.post(`http://localhost:8000/deleteinfo/${id}`)
+            .then(() => {
+                alert('Article est effacé!');
+                // Redirigez l'utilisateur vers la page d'administration après la mise à jour réussie
+                window.location.replace('/admin');
+            })
+            .catch((error) => {
+                alert('Erreur');
+            });
+    };
+
     const setValue = (e) => {
         const { name, value } = e.target;
         setArticleDetail({
+
             ...articleDetail,
             [name]: value,
         });
@@ -90,7 +104,6 @@ export default function UpdateInfoUtileArticle() {
                             console.log('Focus.', editor);
                         }}
                     />
-
                 </div>
             }
 
@@ -99,6 +112,12 @@ export default function UpdateInfoUtileArticle() {
                 onClick={updateArticle}
             >
                 Mettre à jour
+            </button>
+
+            <button
+                className='submit-button'
+                onClick={deleteArticle}
+            >Delete
             </button>
         </div>
     );

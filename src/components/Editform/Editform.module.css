@@ -1,0 +1,16 @@
+.horizontal {
+    width: 50 rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+}
+
+.inputhorizontal {
+    width: 40rem;
+}
+
+.textarea {
+    width: 40rem;
+    min-height: 20rem;
+}

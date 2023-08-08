@@ -1,11 +1,9 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { BsFacebook, BsInstagram, BsChevronDown } from 'react-icons/bs';
 import styles from './Navbar.module.css'
 import { useDarkMode } from "../../context/DarkModeContext";
 import { FiSun } from "react-icons/fi";
 import { BiSolidMoon } from "react-icons/bi";
-import { AiFillHome } from "react-icons/ai";
 
 
 export default function Navbar() {

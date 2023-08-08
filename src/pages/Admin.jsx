@@ -1,24 +1,20 @@
 import React from 'react';
-import BoardListContainer from '../components/BoardListContainer/BoardListContainer';
-import AdminArticle from '../components/AdminArticle/AdminArticle';
 import AdminImg from '../components/AdminImg/AdminImg';
 import ListNewsletter from '../components/Newsletter/ListNewsletter';
 import BoardListContainerWith from '../components/BoardListContainer/BoardListContainerWith';
-import AddInfoUtileArticle from '../components/AddInfoUtileArticle/AddInfoUtileArticle';
 import InfoUtileArticleList from '../components/InfoUtileArticleList/InfoUtileArticleList';
-// import AddArticle from '../components/AddInfoUtileArticle/AddArticle/AddArticle'
+// import LogOut from '../components/LogOut/LogOut'
 
 export default function Admin() {
     return (
         <div>
+            {/* <LogOut /> */}
             <AdminImg />
-            {/* <AdminArticle /> //essaie à partir des donnés dnas la page, à supprimer après le final */}
-            {/* <BoardListContainer /> //axios erreur 500*/}
-
+            {/* table of form of contact */}
             <BoardListContainerWith />
-            {/* 위의 것 en train de faire */}
+            {/* table of subscription of contact */}
             <ListNewsletter />
-            {/* <AddArticle /> */}
+            {/* table of form of Info Utile */}
             <InfoUtileArticleList />
         </div>
     )

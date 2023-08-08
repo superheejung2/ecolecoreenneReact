@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './GaleriePhoto.module.css';
 import Carousel from "nuka-carousel"
 
-
+// Carousels of school's events 
 export default function GaleriePhoto() {
     return (
         <article>

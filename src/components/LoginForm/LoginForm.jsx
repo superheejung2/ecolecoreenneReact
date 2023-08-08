@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from './LoginForm.module.css';
 import axios from '../../api/axiosInstance';
 
@@ -27,7 +27,6 @@ export default function LoginForm() {
         // console.log(logins)
 
         try {
-            // await axios.post(SERVER_URL, logins);
             await axios.post(SERVER_URL, logins);
             navigate("/admin");
         }
@@ -42,7 +41,7 @@ export default function LoginForm() {
             <img src="img/changdeokgung-palace_coree.jpg" alt="palas coréen" className={styles.img} />
 
             <div className={styles.description}>
-                <div className={styles.check}>
+                <div>
                     <h1>Mon espace</h1>
                     <form onSubmit={onSubmitHandler}>
                         <div>
@@ -55,6 +54,8 @@ export default function LoginForm() {
                                 placeholder='exemple@email.com'
                                 required
                                 onChange={handleChange}
+                                className={styles.input}
+
                             />
 
                         </div>
@@ -73,11 +74,11 @@ export default function LoginForm() {
                         <button type="submit" className={styles.button}>M'identifier</button>
                     </form>
 
-                </div>
+                    <div>
+                        <h1>Nouvelle inscription</h1>
+                        <Link to="/logincreate"><button>Créer mon compte</button></Link>
+                    </div>
 
-                <div className={styles.nouvelle}>
-                    <h1>Nouvelle inscription</h1>
-                    <button>Créer mon compte</button>
                 </div>
             </div>
 

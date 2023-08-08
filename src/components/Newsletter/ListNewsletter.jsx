@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
-// import { Link } from 'react-router-dom';
-import Button from '../ui/Button';
 import styles from './ListNewsletter.module.css'
+import { Link } from 'react-router-dom';
+import { AiFillDelete } from "react-icons/ai";
+import { AiFillEdit } from "react-icons/ai";
 
 
 
-//유튜브 보고 참고해서 만듬
+// table of subscription of contact
 export default function ListNewsletter() {
 
     const [newsletter, setNewsletter] = useState([])
@@ -19,16 +20,16 @@ export default function ListNewsletter() {
 
     return (
         <article>
-            {/* <Link to="/AddNewsletterInHome">Add+</Link> */}
 
             <h1>Newsletter</h1>
             <table>
                 <thead>
                     <tr>
-                        <th>firstname </th>
-                        <th>lastname </th>
-                        <th>email </th>
-                        <th>date </th>
+                        <th>Nom </th>
+                        <th>Prénom </th>
+                        <th>Email </th>
+                        <th>Date </th>
+                        <th>modification</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,8 +41,9 @@ export default function ListNewsletter() {
                                 <td>{data.email}</td>
                                 <td>{data.date}</td>
                                 <td>
-                                    <button>Update</button>
-                                    <button>Delete</button>
+                                    <Link to={``}>
+                                        <button><AiFillDelete /><AiFillEdit /></button>
+                                    </Link>
                                 </td>
                             </tr>
                         ))

@@ -2,9 +2,9 @@ import { useState } from 'react';
 import styles from './AddNewsletter.module.css'
 import axios from 'axios';
 
-
 const SERVER_URL = '/newsletter';
 
+//* form for subsciption to school's newsletter*/
 export default function AddNewsletter() {
 
     const [forms, setForms] = useState({

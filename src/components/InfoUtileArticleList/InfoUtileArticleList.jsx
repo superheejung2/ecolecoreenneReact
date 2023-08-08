@@ -5,6 +5,8 @@ import styles from './InfoUtileArticleList.module.css';
 import ReactPaginate from 'react-paginate';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
+import { AiFillDelete } from "react-icons/ai";
+import { AiFillEdit } from "react-icons/ai";
 
 
 export default function InfoUtileArticleList() {
@@ -52,9 +54,8 @@ export default function InfoUtileArticleList() {
                     <td>{formatDateFrench(element.date)}</td>
                     <td>
                         <Link to={`/infoupdate/${element.id}`}>
-                            <button>Update</button>
+                            <button><AiFillDelete /><AiFillEdit /></button>
                         </Link>
-                        <button>Delete</button>
                     </td>
                 </tr>
             );
@@ -67,9 +68,7 @@ export default function InfoUtileArticleList() {
 
             <div className={styles.btn}>
                 <Link to="/addinfoutilearticle">
-
                     <button className={styles.button}>Ajouter un article</button>
-
                 </Link>
             </div>
 

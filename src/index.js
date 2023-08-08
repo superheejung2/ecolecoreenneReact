@@ -13,11 +13,12 @@ import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
 import reportWebVitals from './reportWebVitals';
 import CoursDetail from './pages/CoursDetail';
-// import CreateNewsletter from './components/Newsletter/CreateNewsletter';
+import Logincreate from './components/LoginCreate/LoginCreate'
 import AddInfoUtileArticle from "./components/AddInfoUtileArticle/AddInfoUtileArticle"
 import InfoUtileArticleUpdate from "./components/InfoUtileArticleUpdate/InfoUtileArticleUpdate"
 import InfoUtileDetail from "./pages/InfoUtileDetail"
 
+import Editform from "./components/Editform/Editform"
 
 const router = createBrowserRouter([
   {
@@ -63,12 +64,18 @@ const router = createBrowserRouter([
         path: '/admin',
         element: <Admin />,
       },
-
       {
         path: '/infoupdate/:id',
         element: <InfoUtileArticleUpdate />,
       },
-
+      {
+        path: '/logincreate',
+        element: <Logincreate />,
+      },
+      {
+        path: '/editform',
+        element: <Editform />,
+      },
     ]
   }
 ])

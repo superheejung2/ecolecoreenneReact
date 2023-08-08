@@ -4,7 +4,7 @@ import { BsFacebook, BsInstagram, BsTelephoneFill } from 'react-icons/bs';
 import { LuMail } from "react-icons/lu";
 import styles from './ContactEcole.module.css'
 
-
+//information of school's contact
 export default function ContactEcole() {
     return (
         <div className={styles.box}>
