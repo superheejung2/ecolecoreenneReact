@@ -10,6 +10,7 @@ export default function LogOut(props) {
     const onClickHandler = () => {
         axios.get('http://localhost:8000/logout')
             .then(response => {
+                console.log(response)
                 if (response.data.success) {
                     navigate('/');
                 } else {
