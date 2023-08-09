@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
-import styles from './ListNewsletter.module.css'
 import { Link } from 'react-router-dom';
 import { AiFillDelete } from "react-icons/ai";
 import { AiFillEdit } from "react-icons/ai";
-
 
 
 // table of subscription of contact
@@ -13,7 +11,6 @@ export default function ListNewsletter() {
     const [newsletter, setNewsletter] = useState([])
     useEffect(() => {
         axios.get('http://localhost:8000/newsletter')
-            // .then(res => console.log(res)).
             .then(res => setNewsletter(res.data))
             .catch(err => console.log(err));
     }, [])

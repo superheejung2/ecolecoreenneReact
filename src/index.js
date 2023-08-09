@@ -17,7 +17,6 @@ import Logincreate from './components/LoginCreate/LoginCreate'
 import AddInfoUtileArticle from "./components/AddInfoUtileArticle/AddInfoUtileArticle"
 import InfoUtileArticleUpdate from "./components/InfoUtileArticleUpdate/InfoUtileArticleUpdate"
 import InfoUtileDetail from "./pages/InfoUtileDetail"
-
 import Editform from "./components/Editform/Editform"
 
 const router = createBrowserRouter([

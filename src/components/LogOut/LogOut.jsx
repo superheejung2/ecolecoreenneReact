@@ -1,28 +1,25 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
+import styles from './LogOut.module.css'
 
-const SERVER_URL = '/logout';
 
 export default function LogOut(props) {
-
-    useEffect(() => {
-        axios.get(SERVER_URL)
-            .then(response => { console.log(response) })
-    }, [])
-
+    const navigate = useNavigate();
 
     const onClickHandler = () => {
-        axios.get(`/api/users/logout`)
+        axios.get('http://localhost:8000/logout')
             .then(response => {
                 if (response.data.success) {
-                    props.history.push("/login")
+                    navigate('/');
                 } else {
+                    console.error();
                 }
             })
     }
     return (
         <div>
-            <button onClick={onClickHandler}>se deconnecter</button>
+            <button onClick={onClickHandler} className={styles.btn}>LOGOUT</button>
         </div>
     )
 }

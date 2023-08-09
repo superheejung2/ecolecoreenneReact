@@ -3,12 +3,12 @@ import AdminImg from '../components/AdminImg/AdminImg';
 import ListNewsletter from '../components/Newsletter/ListNewsletter';
 import BoardListContainerWith from '../components/BoardListContainer/BoardListContainerWith';
 import InfoUtileArticleList from '../components/InfoUtileArticleList/InfoUtileArticleList';
-// import LogOut from '../components/LogOut/LogOut'
+import LogOut from '../components/LogOut/LogOut'
 
 export default function Admin() {
     return (
         <div>
-            {/* <LogOut /> */}
+            <LogOut />
             <AdminImg />
             {/* table of form of contact */}
             <BoardListContainerWith />

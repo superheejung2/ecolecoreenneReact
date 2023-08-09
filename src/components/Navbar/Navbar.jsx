@@ -5,7 +5,6 @@ import { useDarkMode } from "../../context/DarkModeContext";
 import { FiSun } from "react-icons/fi";
 import { BiSolidMoon } from "react-icons/bi";
 
-
 export default function Navbar() {
     const { darkMode, toggleDarkMode } = useDarkMode()
 
@@ -25,7 +24,9 @@ export default function Navbar() {
                                 {darkMode && <img className="logo" alt="logo" src="../img/logo_darkMode.png" />}
                             </Link>
                         </div>
+
                         <nav>
+
                             <Link to="/">ACCEUIL </Link>
 
                             <Link to="/ecole">ECOLE</Link>

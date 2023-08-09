@@ -4,8 +4,6 @@ import styles from './InfoUtileArticleRead.module.css'
 import ReactHtmlParser from 'react-html-parser';
 
 
-
-
 //components showing like card in page 
 export default function InfoUtileArticleRead() {
 

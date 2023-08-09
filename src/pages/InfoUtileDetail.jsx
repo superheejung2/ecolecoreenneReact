@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import Axios from 'axios';
 
+// get detail of article of infos utils
 export default function InfoUtileDetail() {
     const { id } = useParams();
     const [articleDetail, setArticleDetail] = useState({});
