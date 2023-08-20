@@ -1,0 +1,27 @@
+/*Mobile first */
+/*defaut */
+@media screen {
+
+    .box {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .article {
+        padding: 3rem 0;
+        background-color: #E2E6E6;
+    }
+}
+
+
+@media (min-width: 576px) {}
+
+/* Tablet */
+@media screen and (min-width: 768px) {}
+
+/* Desktop */
+@media screen and (min-width: 768px) {}
