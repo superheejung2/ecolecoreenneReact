@@ -8,7 +8,8 @@
     }
 
     p {
-        color: #000
+        color: #000;
+        margin-left: 0;
     }
 
     .missonsAndIcon {
@@ -20,7 +21,13 @@
         font-size: 7rem;
     }
 
+    .box1 {
+        margin-left: 0;
+    }
+
+
     .box2 {
+        margin-left: 0;
         display: none;
     }
 
@@ -36,6 +43,7 @@
 
     .h1 {
         margin-bottom: 2rem;
+        margin-left: 0;
     }
 }
 

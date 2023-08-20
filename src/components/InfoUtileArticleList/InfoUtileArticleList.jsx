@@ -10,25 +10,33 @@ import { AiFillEdit } from "react-icons/ai";
 
 
 export default function InfoUtileArticleList() {
+    // State to store the fetched articles
     const [viewContent, setViewContent] = useState([]);
+    // State to track the current page for pagination
+
     const [currentPage, setCurrentPage] = useState(0); // La page actuelle, indexée à partir de 0
-    const articlesPerPage = 5;
+    const articlesPerPage = 5; // Number of articles to display per page
     const pageCount = Math.ceil(viewContent.length / articlesPerPage);
 
+    // Fetch articles when the component mounts
     useEffect(() => {
         Axios.get('http://localhost:8000/infoarticle').then((response) => {
             setViewContent(response.data);
         });
     }, []);
 
+    // Truncate text to a specified length
     const truncate = (str, n) => {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
     };
 
+    // Format a date string in French format
     const formatDateFrench = (dateStr) => {
         const date = new Date(dateStr);
         return format(date, 'dd/MM/yyyy'); // Formatage de la date en français
     };
+
+    // Handle page change in pagination
 
     const handlePageClick = ({ selected }) => {
         setCurrentPage(selected);

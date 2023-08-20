@@ -1,0 +1,33 @@
+.text {
+    font-size: 1.6rem;
+    /* font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.box {
+    background-color: gainsboro;
+    width: 27rem;
+    height: 14rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+}
+
+.mb {
+    margin-bottom: 0.8rem;
+}
+
+.img {
+    width: 20rem;
+    border-radius: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* align-self: center; */
+}
+
+.name {
+    font-weight: bold;
+}

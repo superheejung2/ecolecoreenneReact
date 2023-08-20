@@ -71,7 +71,7 @@ export default function AddNewsletter() {
         <article>
             <div className={styles.bg}>
                 <div className={styles.container}>
-                    <h3 className={styles.news}>Newsletter</h3>
+                    <h2 className={styles.news}>Newsletter</h2>
                     <div className={styles.abonnez}>
                         Abonnez-vous pour suivre notre l’actualité </div>
 
