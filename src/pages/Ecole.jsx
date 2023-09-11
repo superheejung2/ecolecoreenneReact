@@ -1,9 +1,9 @@
 import React from 'react'
-import HomeEcole from '../components/HomeEcole/HomeEcole'
+import EcoleDetail from '../components/EcoleDetail/EcoleDetail'
 
 
 export default function Ecole() {
     return (
-        <HomeEcole />
+        <EcoleDetail />
     )
 }

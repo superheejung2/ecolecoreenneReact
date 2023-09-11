@@ -9,7 +9,7 @@ export default function Temoins() {
             <div className={styles.box}>
                 <div className={styles.smallbox}>
                     <SmallTemoins
-                        image="/img/cours_enfant.png"
+                        image="/img/img_Sonia.png"
                         alt="Cours d'adult"
                         content="
                         Je peux voir mes progrès quand je comprends quelques mots dans un film coréen. Pour l'instant, c'est juste quelques mots mais dans quelques années, ça sera tout le film.
@@ -19,23 +19,24 @@ export default function Temoins() {
                 </div>
                 <div>
                     <SmallTemoins
-                        image="/img/cours_enfant.png"
+                        image="/img/img_Sonia.png"
                         alt="Cours d'adult"
                         content="Les professeurs sont impliqués et passionnés par leur langue et culture. Je recommanderais l’Ecole à quiconque serait intéressé par l’apprentissage du coréen."
                         nameofstudent="Sonia Pinto"
                     />
                 </div>
-                <div>
+
+                <div className={styles.display2}>
                     <SmallTemoins
-                        image="/img/cours_enfant.png"
+                        image="/img/img_Thi.png"
                         alt="Cours d'adult"
                         content="Lorem ipsum dolor adipisicing elit"
                         nameofstudent="Thi Le"
                     />
                 </div>
-                <div>
+                <div className={styles.display3}>
                     <SmallTemoins
-                        image="/img/cours_enfant.png"
+                        image="/img/img_Sonia.png"
                         alt="Cours d'adult"
                         content="Lorem ipsum dolor adipisicing elit"
                         nameofstudent="Thi Le"

@@ -12,45 +12,46 @@
         margin-left: 0;
     }
 
-    .missonsAndIcon {
+    /* .missonsAndIcon {
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 7rem;
-    }
+    } */
 
     .box1 {
         margin-left: 0;
     }
 
 
-    .box2 {
+    /* .box2 {
         margin-left: 0;
         display: none;
-    }
+    } */
 
-    .pwithIcons {
+    /* .pwithIcons {
         margin: auto;
         margin-top: 1.5rem;
-    }
+    } */
 
-    .missions {
+    /* .missions {
         margin-top: 2.5rem;
         display: flex;
         justify-content: space-around;
-    }
+    } */
 
     .h1 {
         margin-bottom: 2rem;
         margin-left: 0;
     }
 
+    .partenaire {
+        margin-top: 4rem;
+    }
 
 }
-
-
 
 /* Mobile */
 @media (min-width: 576px) {}

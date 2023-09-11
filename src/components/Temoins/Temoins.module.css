@@ -6,22 +6,48 @@
         display: flex;
         width: 85%;
         margin: auto;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin-top: 3rem;
         margin-bottom: 3rem;
+        justify-content: space-around;
     }
 
     .article {
         padding: 3rem 0;
-        background-color: #E2E6E6;
+        /* background-color: #E2E6E6; */
+        background-color: #F5F5F7;
     }
 }
 
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .box {
+        display: flex;
+        margin-top: 3rem;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    .display2 .display3 {
+        display: none;
+    }
+
+}
 
 /* Tablet */
-@media screen and (min-width: 768px) {}
+/* @media screen and (min-width: 768px) {
+    .display2 {
+        display: block;
+    }
+} */
+
 
 /* Desktop */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {
+
+    .display2,
+    .display3 {
+        display: block;
+    }
+
+}

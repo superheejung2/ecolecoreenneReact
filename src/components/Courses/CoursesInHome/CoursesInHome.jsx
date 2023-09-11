@@ -19,10 +19,8 @@ export default function CoursesInHome() {
             </div >
             <div className={styles.container}>
                 <h1 className={styles.title}>Nos cours</h1>
-                <p className={styles.p1}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, exercitationem minima ipsa voluptatibus tempora totam sed perspiciatis tempore. Iste ipsa maiores quos beatae distinctio autem voluptatibus laborum eos, asperiores vitae.
-                    Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores.</p>
-                <p className={styles.p2}>Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores.
-                    Alias quasi recusandae, qui, consequatur consequuntur iure deserunt non voluptatibus distinctio cupiditate quisquam enim, dolor veritatis voluptatem nulla perferendis unde quis officiis soluta quia. Voluptatum maxime molestiae rem repellendus! Asperiores.</p>
+                <p className={styles.p1}>Vous avez envie d’apprendre le coréen ? Êtes-vous totalement débutant ? Vous avez peut-être déjà commencé à explorer la langue par vous-même, mais vous souhaitez maintenant bénéficier de l'expertise d'un professeur et partager cette expérience avec d'autres apprenants ? L'école coréenne de Nantes vous propose plusieurs cours collectifs pour adultes, adolescents et enfants tout au long de l'année, adaptés à différents niveaux de compétence.</p>
+                {/* <p className={styles.p2}>Nos cours pour enfants sont conçus de manière ludique et stimulante, offrant ainsi à vos enfants une expérience d'apprentissage engageante pour découvrir la langue et la culture coréennes.</p> */}
 
                 <div className={styles.cours}>
                     <div className={styles.mr}>
@@ -30,22 +28,24 @@ export default function CoursesInHome() {
                             title="Cours d'enfant"
                             image="/img/cours_enfant.png"
                             alt="Cours d'enfant"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit..."
+                            content="
+                            3 classes de cours pour enfants sont proposées le samedi matin pour les enfants de plus de 3 ans."
                         />
                     </div>
                     <div className={styles.mr}>
                         <CoursesSmallSize
-                            title="Cours d'adult"
+                            title="Cours d'adult/ados"
                             image="/img/cours_enfant.png"
                             alt="Cours d'adult"
-                            content="Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit..."
+                            content="
+                            Accessible à partir du collégien, vous choisissez le cours selon votre niveau et votre disponibilité."
                         />
                     </div>
                     <div>
                         <CoursesSmallSize
                             title="Inscription 2023/24"
                             image="/img/cours_enfant.png"
-                            content=" dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                            content="L'inscription pour les cours de coréen 2023/24 est en cours."
                         />
                         <button className={styles.button}>inscrire</button>
                     </div>

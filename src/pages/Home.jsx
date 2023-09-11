@@ -6,16 +6,19 @@ import GaleriePhoto from '../components/GaleriePhoto/GaleriePhoto'
 import AddNewsletter from '../components/Newsletter/AddNewsletter'
 import Temoins from '../components/Temoins/Temoins'
 
+
+
 export default function Home() {
     return (
         <div>
+
             <HomeImg />
             <HomeEcole />
             <CoursesInHome />
             {/* Carousels of school's events  */}
             <GaleriePhoto />
-            {/* form for subsciption to school's newsletter*/}
             <Temoins />
+            {/* form for subsciption to school's newsletter*/}
             <AddNewsletter />
         </div>
     )

@@ -7,7 +7,7 @@
 
 .box {
     background-color: gainsboro;
-    width: 27rem;
+    width: 23rem;
     height: 14rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -19,7 +19,7 @@
 }
 
 .img {
-    width: 20rem;
+    width: 10rem;
     border-radius: 100%;
     margin: auto;
     display: flex;

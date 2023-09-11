@@ -23,10 +23,9 @@ export default function GaleriePhoto() {
                         </Carousel>
                     </div>
                     <div className={styles.text}>
-                        <p className={styles.p1}>Et perspiciatis veniam et eius dolores et omnis fuga id labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
-                        <p className={styles.p2}>Veniam et eius doloxid labore ullam ut iste deserunt ad suscipit odio et quisquam quia. Ea tempora enim ea rerum laborum est obcaecati animi. Est dolorem vero non architecto praesentium et assumenda soluta ut velit animi est accusamus omnis et quam veritatis qui iusto culpa.</p>
-                        <p className={styles.p3}>Fugas dolores imi accusaomnis et quam vermi est accusamus omnis et quam veritatis iusto culpa.</p>
-
+                        <p className={styles.p1}>L'école coréenne de Nantes propose des cours de langue ainsi que diverses activités, que ce soit en tant qu'organisatrice, coorganisatrice ou participante à des événements variés. Notre objectif est de vous offrir des opportunités de rencontres, d'échanges culturels et d'apprentissage enrichissants.</p>
+                        {/* <p className={styles.p2}>Parmi les événements que nous organisons, citons le pique-nique de Chuseok (la fête coréenne de la récolte) en automne, ainsi que des célébrations du Seollal (le Nouvel An lunaire coréen) pour nos élèves. </p>
+                        <p className={styles.p3}>L'école coréenne participe également à des événements culturels coréens, asiatiques et locaux, en collaboration avec des institutions telles que les bibliothèques, associations et entreprises. Nous proposons une variété d'ateliers portant sur la langue, la culture, l'histoire et la cuisine, adaptés à vos besoins et intérêts.</p> */}
                     </div>
                 </div>
 
